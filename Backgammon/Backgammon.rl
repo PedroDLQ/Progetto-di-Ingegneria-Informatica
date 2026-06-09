@@ -112,7 +112,7 @@ cls Move:
 
 # Board Class
 cls Board:
-    Point points[24]
+    Point[24] points
 
     playerChips bar_white    
     playerChips bar_black   
@@ -369,14 +369,16 @@ cls Board:
                         if self.is_valid_move(m, d1):
                             let next_b = self.clone()
                             next_b.apply_move(m)
-                            if next_b.has_any_legal_move(p, d2): return true
+                            if next_b.has_any_legal_move(p, d2): 
+                                return true
                     if self.is_all_in_home(p):
                         let m: Move
                         m.init(p, src, kBearOff)
                         if self.is_valid_move(m, d1):
                             let next_b = self.clone()
                             next_b.apply_move(m)
-                            if next_b.has_any_legal_move(p, d2): return true
+                            if next_b.has_any_legal_move(p, d2):
+                                return true
             src = src + 1
         return false
 
@@ -471,16 +473,26 @@ cls Board:
         let x = n
         while x > 0:
             let digit = x - (x / 10) * 10
-            if digit == 0: result = "0"s + result
-            else if digit == 1: result = "1"s + result
-            else if digit == 2: result = "2"s + result
-            else if digit == 3: result = "3"s + result
-            else if digit == 4: result = "4"s + result
-            else if digit == 5: result = "5"s + result
-            else if digit == 6: result = "6"s + result
-            else if digit == 7: result = "7"s + result
-            else if digit == 8: result = "8"s + result
-            else: result = "9"s + result
+            if digit == 0: 
+                result = "0"s + result
+            else if digit == 1: 
+                result = "1"s + result
+            else if digit == 2: 
+                result = "2"s + result
+            else if digit == 3: 
+                result = "3"s + result
+            else if digit == 4: 
+                result = "4"s + result
+            else if digit == 5: 
+                result = "5"s + result
+            else if digit == 6: 
+                result = "6"s + result
+            else if digit == 7:   
+                result = "7"s + result
+            else if digit == 8: 
+                result = "8"s + result
+            else: 
+                result = "9"s + result
             x = x / 10
         return result
 
@@ -549,15 +561,17 @@ cls Board:
 fun roll_dice(RNG rng) -> moveVector:
     let dice_res: moveVector
 
-    let d1 = rng.randint(1, 7)
-    let d2 = rng.randint(1, 7)
-    dice_res.push(d1)
-    dice_res.push(d2)
+    let d1 : BInt<1, 7>
+    d1 = rng.randint(1, 7)
+    let d2 : BInt<1, 7> 
+    d2 = rng.randint(1, 7)
+    dice_res.append(d1)
+    dice_res.append(d2)
 
     # Doubles exception - four moves with the same value
     if d1 == d2:
-        dice_res.push(d1)
-        dice_res.push(d1)
+        dice_res.append(d1)
+        dice_res.append(d1)
 
     return dice_res
 
@@ -606,7 +620,7 @@ act play() -> Game:
                 while board.remaining_moves.size() > 0:
                     board.remaining_moves.pop()
             else:
-                let must_play_idx = -1
+                frm must_play_idx = -1
                 if board.remaining_moves.size() == 2:
                     let d0 = board.remaining_moves.get(0)
                     let d1 = board.remaining_moves.get(1)
@@ -630,7 +644,6 @@ act play() -> Game:
                                     must_play_idx = 1
 
                 actions:
-                    # Action requires choosing WHICH die index from the pool to execute
                     act select_move(frm Int die_idx, frm Move move) {
                         die_idx >= 0 and die_idx < board.remaining_moves.size() and
                         (must_play_idx == -1 or die_idx == must_play_idx) and
@@ -644,7 +657,7 @@ act play() -> Game:
                         let idx = 0
                         while idx < board.remaining_moves.size():
                             if idx != die_idx:
-                                next_moves.push(board.remaining_moves.get(idx))
+                                next_moves.append(board.remaining_moves.get(idx))
                             idx = idx + 1
                         board.remaining_moves = next_moves
 
