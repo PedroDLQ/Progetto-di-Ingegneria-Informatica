@@ -10,9 +10,9 @@ import rng
 
 
 # Type aliases
-using diceRoll   BInt<1, 7>
-using playerChips BInt<0, 16>
-using moveVector  BoundedVector<diceRoll, 4>
+using diceRoll = BInt<1, 7>
+using playerChips = BInt<0, 16>
+using moveVector  = BoundedVector<diceRoll, 4>
 
 
 # Constants
@@ -568,6 +568,11 @@ act play() -> Game:
     frm board: Board
     frm winner: Player
     frm rng_agent: RNG
+    frm game_seed: Int
+
+    act initialize_seed(frm Int external_seed)
+        game_seed = external_seed
+        rng_agent.set_seed(12345)  # TOBE: randomized by Godot
 
     # Opening roll - re-roll until non-double; higher die goes first
     frm init_roll: moveVector
