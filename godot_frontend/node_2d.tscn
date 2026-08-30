@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://cf4gloatn34y4"]
+
+[ext_resource type="Script" uid="uid://cjceech4tsu5v" path="res://main_ui.gd" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://b6ms5kcm4jwj" path="res://button.gd" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://bwyoxlxv4vp3x" path="res://board_view.tscn" id="2_epypp"]
+
+[node name="Node2D" type="Node2D" unique_id=1690010056]
+process_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2040582965]
+
+[node name="MainUI" type="Control" parent="CanvasLayer" unique_id=220993850]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_wtcfe")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/MainUI" unique_id=347423767]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0030864198
+anchor_right = 1.0
+anchor_bottom = 1.0030864
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MainUI" unique_id=1598356255]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MainUI/MarginContainer" unique_id=1087506424]
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="CanvasLayer/MainUI/MarginContainer/HBoxContainer" unique_id=1908266703]
+layout_mode = 2
+text = "Start Game
+"
+
+[node name="StepButton" type="Button" parent="CanvasLayer/MainUI/MarginContainer/HBoxContainer" unique_id=127577693]
+layout_mode = 2
+text = "Next Move
+"
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer/MainUI/MarginContainer/HBoxContainer" unique_id=1184070911]
+layout_mode = 2
+text = "Ready to play"
+
+[node name="BoardContainer" type="Control" parent="CanvasLayer/MainUI" unique_id=1967660002]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoardView" parent="CanvasLayer/MainUI" unique_id=648282319 instance=ExtResource("2_epypp")]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1686035171]
+offset_left = 279.0
+offset_top = 141.0
+offset_right = 444.0
+offset_bottom = 244.0
+mouse_filter = 1
+text = "test"
+script = ExtResource("2_0e48y")

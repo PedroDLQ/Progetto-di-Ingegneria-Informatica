@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bdfpcnu2y7rxv"]
+
+[ext_resource type="Script" uid="uid://hebjr6qklhra" path="res://test1.gd" id="1_7p1km"]
+
+[node name="Node2D" type="Node2D" unique_id=1316993088]
+script = ExtResource("1_7p1km")
+
+[node name="BackgammonBridge" type="BackgammonBridge" parent="." unique_id=1280925979]

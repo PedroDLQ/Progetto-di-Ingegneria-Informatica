@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+import os
+import sys
+
+env = Environment()
+
+# Setup the build options matching our Godot setup
+env.Append(CPPPATH=[
+    "src/", 
+    "godot-cpp/include/", 
+    "godot-cpp/gen/include/", 
+    "../Rulebook/Backgammon/", 
+    "../Rulebook/Go/"
+])
+
+# Tells backgammon.h to fully expose its definitions
+env.Append(CPPDEFINES=['RLC_GET_TYPE_DEFS', 'RLC_GET_FUNCTION_DECLS'])
+
+# Tell the linker where to find library dependencies (like libbackgammon.so)
+env.Append(LIBPATH=[
+    "godot-cpp/bin/", 
+    "../Rulebook/Backgammon/", 
+    "../Rulebook/Go/",
+    "./src/",
+    "#/bin/"
+])
+
+platform = sys.platform
+if platform.startswith("linux"):
+    env.Append(CCFLAGS=["-g", "-O3", "-fPIC", "-std=c++17"])
+    # "backgammon" here instructs the linker to bind against libbackgammon.so
+    env.Append(LIBS=["godot-cpp.linux.template_debug.x86_64", "backgammon"])
+    # Tell the binary to look in its local directory at runtime for the Rulebook .so
+    env.Append(LINKFLAGS=["-Wl,-rpath,'$$ORIGIN'"])
+
+sources = [
+    "src/register_types.cpp",
+]
+""
+# Compile using ONLY your source bridge files
+env.SharedLibrary("backgammon_bridge", sources, LIBS=["rl_Backgammon.so"])
