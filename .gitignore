@@ -1,14 +1,30 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
 build/
 dist/
 wheels/
 *.egg-info
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Virtual environments
-.venv
+.venv/
+venv/
 
-# binary files 
+# Local tooling / editor state
+.vscode/
+.idea/
+.DS_Store
+
+# Generated runtime outputs
+*.out
 go.out
 backgammon.out
+
+# Keep project artifacts tracked if they are intentional:
+# do not ignore .so files or source files required by the game rules
