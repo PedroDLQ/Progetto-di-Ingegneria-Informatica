@@ -1,0 +1,5838 @@
+#ifdef __cplusplus
+extern "C"{
+#endif
+#ifndef RLC_HEADER
+#ifdef RLC_C_HEADER
+#undef RLC_C_HEADER
+#define RLC_HEADER
+
+#include "stddef.h"
+#include "stdint.h"
+#define RLC_GET_FUNCTION_DECLS
+#define RLC_GET_TYPE_DECLS
+#endif
+#endif
+#ifdef RLC_GET_TYPE_DECLS
+typedef union VectorTboolT VectorTboolT;
+typedef union VectorTdoubleT VectorTdoubleT;
+typedef union Coords Coords;
+typedef union VectorTCoordsT VectorTCoordsT;
+typedef union VectorTint8_tT VectorTint8_tT;
+typedef union String String;
+typedef union VectorTStringT VectorTStringT;
+typedef union BIntT0T1T BIntT0T1T;
+typedef union BIntT0T2T BIntT0T2T;
+typedef union CrossState CrossState;
+typedef union Territory Territory;
+typedef union Scores Scores;
+typedef union Board Board;
+typedef union GamePassTurn GamePassTurn;
+typedef union GamePlaceStone GamePlaceStone;
+typedef union Game Game;
+struct AnyGameAction;
+#undef RLC_GET_TYPE_DECLS
+#endif
+
+#ifdef RLC_TYPE
+RLC_TYPE(Vector)
+RLC_TYPE(Vector)
+RLC_TYPE(Coords)
+RLC_TYPE(Vector)
+RLC_TYPE(Vector)
+RLC_TYPE(String)
+RLC_TYPE(Vector)
+RLC_TYPE(BInt)
+RLC_TYPE(BInt)
+RLC_TYPE(CrossState)
+RLC_TYPE(Territory)
+RLC_TYPE(Scores)
+RLC_TYPE(Board)
+RLC_TYPE(GamePassTurn)
+RLC_TYPE(GamePlaceStone)
+RLC_TYPE(Game)
+#undef RLC_TYPE
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__BIntT0T1T(union BIntT0T1T * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union BIntT0T1T * self
+RLC_VISIT_FUNCTION(init, rl_m_init__BIntT0T1T, BInt_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__BIntT0T1T_r_bool(bool * __result, union BIntT0T1T * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union BIntT0T1T * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__BIntT0T1T_r_bool, can_BInt_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__Game(union Game * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * self
+RLC_VISIT_FUNCTION(init, rl_m_init__Game, Game_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__Game_r_bool(bool * __result, union Game * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__Game_r_bool, can_Game_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__CrossState_19_19(union CrossState * self[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState *[19][19] self
+RLC_VISIT_FUNCTION(init, rl_m_init__CrossState_19_19, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__CrossState_19_19_r_bool(bool * __result, union CrossState * self[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState *[19][19] self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__CrossState_19_19_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__CrossState_19(union CrossState * self[19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState *[19] self
+RLC_VISIT_FUNCTION(init, rl_m_init__CrossState_19, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__CrossState_19_r_bool(bool * __result, union CrossState * self[19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState *[19] self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__CrossState_19_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__AnyGameAction(struct AnyGameAction * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS struct AnyGameAction * self
+RLC_VISIT_FUNCTION(init, rl_m_init__AnyGameAction, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__AnyGameAction_r_bool(bool * __result, struct AnyGameAction * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS struct AnyGameAction * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__AnyGameAction_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__Territory(union Territory * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Territory * self
+RLC_VISIT_FUNCTION(init, rl_m_init__Territory, Territory_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__Territory_r_bool(bool * __result, union Territory * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Territory * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__Territory_r_bool, can_Territory_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__Scores(union Scores * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Scores * self
+RLC_VISIT_FUNCTION(init, rl_m_init__Scores, Scores_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__Scores_r_bool(bool * __result, union Scores * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Scores * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__Scores_r_bool, can_Scores_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__bool_19_19(bool * self[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS bool *[19][19] self
+RLC_VISIT_FUNCTION(init, rl_m_init__bool_19_19, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__bool_19_19_r_bool(bool * __result, bool * self[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS bool *[19][19] self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__bool_19_19_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__bool_19(bool * self[19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS bool *[19] self
+RLC_VISIT_FUNCTION(init, rl_m_init__bool_19, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__bool_19_r_bool(bool * __result, bool * self[19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS bool *[19] self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__bool_19_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__CrossState(union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(init, rl_m_init__CrossState, CrossState_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__CrossState_r_bool, can_CrossState_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__int8_t_1(int8_t * self[1]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t *[1] self
+RLC_VISIT_FUNCTION(init, rl_m_init__int8_t_1, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__int8_t_1_r_bool(bool * __result, int8_t * self[1]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t *[1] self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__int8_t_1_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__int8_t_8(int8_t * self[8]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t *[8] self
+RLC_VISIT_FUNCTION(init, rl_m_init__int8_t_8, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__int8_t_8_r_bool(bool * __result, int8_t * self[8]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t *[8] self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__int8_t_8_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__strlit(char* * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * self
+RLC_VISIT_FUNCTION(init, rl_m_init__strlit, init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__strlit_r_bool(bool * __result, char* * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__strlit_r_bool, can_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__GamePlaceStone(union GamePlaceStone * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePlaceStone * self
+RLC_VISIT_FUNCTION(init, rl_m_init__GamePlaceStone, GamePlaceStone_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__GamePlaceStone_r_bool(bool * __result, union GamePlaceStone * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePlaceStone * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__GamePlaceStone_r_bool, can_GamePlaceStone_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__Coords(union Coords * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Coords * self
+RLC_VISIT_FUNCTION(init, rl_m_init__Coords, Coords_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__Coords_r_bool(bool * __result, union Coords * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Coords * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__Coords_r_bool, can_Coords_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__GamePassTurn(union GamePassTurn * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePassTurn * self
+RLC_VISIT_FUNCTION(init, rl_m_init__GamePassTurn, GamePassTurn_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__GamePassTurn_r_bool(bool * __result, union GamePassTurn * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePassTurn * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__GamePassTurn_r_bool, can_GamePassTurn_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__Game_Game(union Game * self, union Game * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Game * self, union Game * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__Game_Game, Game_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__Game_Game_r_bool(bool * __result, union Game * self, union Game * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Game * self, union Game * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__Game_Game_r_bool, can_Game_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__Territory_Territory(union Territory * self, union Territory * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Territory * self, union Territory * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__Territory_Territory, Territory_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__Territory_Territory_r_bool(bool * __result, union Territory * self, union Territory * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Territory * self, union Territory * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__Territory_Territory_r_bool, can_Territory_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__AnyGameAction_GamePassTurn(struct AnyGameAction * self, union GamePassTurn * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, union GamePassTurn * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__AnyGameAction_GamePassTurn, assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__AnyGameAction_GamePassTurn_r_bool(bool * __result, struct AnyGameAction * self, union GamePassTurn * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, union GamePassTurn * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__AnyGameAction_GamePassTurn_r_bool, can_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__AnyGameAction_GamePlaceStone(struct AnyGameAction * self, union GamePlaceStone * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, union GamePlaceStone * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__AnyGameAction_GamePlaceStone, assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__AnyGameAction_GamePlaceStone_r_bool(bool * __result, struct AnyGameAction * self, union GamePlaceStone * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, union GamePlaceStone * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__AnyGameAction_GamePlaceStone_r_bool, can_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__AnyGameAction_AnyGameAction(struct AnyGameAction * self, struct AnyGameAction * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, struct AnyGameAction * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__AnyGameAction_AnyGameAction, assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__AnyGameAction_AnyGameAction_r_bool(bool * __result, struct AnyGameAction * self, struct AnyGameAction * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, struct AnyGameAction * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__AnyGameAction_AnyGameAction_r_bool, can_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__GamePlaceStone_GamePlaceStone(union GamePlaceStone * self, union GamePlaceStone * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePlaceStone * self, union GamePlaceStone * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__GamePlaceStone_GamePlaceStone, GamePlaceStone_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__GamePlaceStone_GamePlaceStone_r_bool(bool * __result, union GamePlaceStone * self, union GamePlaceStone * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePlaceStone * self, union GamePlaceStone * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__GamePlaceStone_GamePlaceStone_r_bool, can_GamePlaceStone_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__GamePassTurn_GamePassTurn(union GamePassTurn * self, union GamePassTurn * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePassTurn * self, union GamePassTurn * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__GamePassTurn_GamePassTurn, GamePassTurn_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__GamePassTurn_GamePassTurn_r_bool(bool * __result, union GamePassTurn * self, union GamePassTurn * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePassTurn * self, union GamePassTurn * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__GamePassTurn_GamePassTurn_r_bool, can_GamePassTurn_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__Scores_Scores(union Scores * self, union Scores * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Scores * self, union Scores * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__Scores_Scores, Scores_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__Scores_Scores_r_bool(bool * __result, union Scores * self, union Scores * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Scores * self, union Scores * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__Scores_Scores_r_bool, can_Scores_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__Board_Board(union Board * self, union Board * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Board * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__Board_Board, Board_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__Board_Board_r_bool(bool * __result, union Board * self, union Board * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Board * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__Board_Board_r_bool, can_Board_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__CrossState_19_19_CrossState_19_19(union CrossState * self[19][19], union CrossState * other[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState *[19][19] self, union CrossState *[19][19] other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__CrossState_19_19_CrossState_19_19, assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__CrossState_19_19_CrossState_19_19_r_bool(bool * __result, union CrossState * self[19][19], union CrossState * other[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState *[19][19] self, union CrossState *[19][19] other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__CrossState_19_19_CrossState_19_19_r_bool, can_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__CrossState_19_CrossState_19(union CrossState * self[19], union CrossState * other[19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState *[19] self, union CrossState *[19] other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__CrossState_19_CrossState_19, assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__CrossState_19_CrossState_19_r_bool(bool * __result, union CrossState * self[19], union CrossState * other[19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState *[19] self, union CrossState *[19] other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__CrossState_19_CrossState_19_r_bool, can_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__CrossState_CrossState(union CrossState * self, union CrossState * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState * self, union CrossState * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__CrossState_CrossState, CrossState_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__CrossState_CrossState_r_bool(bool * __result, union CrossState * self, union CrossState * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState * self, union CrossState * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__CrossState_CrossState_r_bool, can_CrossState_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__BIntT0T2T_BIntT0T2T(union BIntT0T2T * self, union BIntT0T2T * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, union BIntT0T2T * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__BIntT0T2T_BIntT0T2T, BInt_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__BIntT0T2T_BIntT0T2T_r_bool(bool * __result, union BIntT0T2T * self, union BIntT0T2T * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, union BIntT0T2T * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__BIntT0T2T_BIntT0T2T_r_bool, can_BInt_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__BIntT0T1T_BIntT0T1T(union BIntT0T1T * self, union BIntT0T1T * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T1T * self, union BIntT0T1T * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__BIntT0T1T_BIntT0T1T, BInt_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__BIntT0T1T_BIntT0T1T_r_bool(bool * __result, union BIntT0T1T * self, union BIntT0T1T * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T1T * self, union BIntT0T1T * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__BIntT0T1T_BIntT0T1T_r_bool, can_BInt_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__Coords_Coords(union Coords * self, union Coords * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Coords * self, union Coords * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__Coords_Coords, Coords_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__Coords_Coords_r_bool(bool * __result, union Coords * self, union Coords * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Coords * self, union Coords * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__Coords_Coords_r_bool, can_Coords_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__strlit_strlit(char* * self, char* * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS char* * self, char* * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__strlit_strlit, assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__strlit_strlit_r_bool(bool * __result, char* * self, char* * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS char* * self, char* * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__strlit_strlit_r_bool, can_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__String_String(union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__String_String, String_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__String_String_r_bool(bool * __result, union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__String_String_r_bool, can_String_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop__String(union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(drop, rl_m_drop__String, String_drop, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop__String_r_bool(bool * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(can_drop, rl_m_can_drop__String_r_bool, can_String_drop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop__Territory(union Territory * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Territory * self
+RLC_VISIT_FUNCTION(drop, rl_m_drop__Territory, Territory_drop, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop__Territory_r_bool(bool * __result, union Territory * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Territory * self
+RLC_VISIT_FUNCTION(can_drop, rl_m_can_drop__Territory_r_bool, can_Territory_drop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_print_string__String(union String * s);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * s
+RLC_VISIT_FUNCTION(print_string, rl_print_string__String, String_print_string, void ,  s)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_print_string__String_r_bool(bool * __result, union String * s);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * s
+RLC_VISIT_FUNCTION(can_print_string, rl_can_print_string__String_r_bool, can_String_print_string, bool ,  s)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_print_string_lit__strlit(char* * s);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * s
+RLC_VISIT_FUNCTION(print_string_lit, rl_print_string_lit__strlit, print_string_lit, void ,  s)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_print_string_lit__strlit_r_bool(bool * __result, char* * s);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * s
+RLC_VISIT_FUNCTION(can_print_string_lit, rl_can_print_string_lit__strlit_r_bool, can_print_string_lit, bool ,  s)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_print__String(union String * to_print);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * to_print
+RLC_VISIT_FUNCTION(print, rl_print__String, String_print, void ,  to_print)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_print__String_r_bool(bool * __result, union String * to_print);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * to_print
+RLC_VISIT_FUNCTION(can_print, rl_can_print__String_r_bool, can_String_print, bool ,  to_print)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_print__int8_t(int8_t * to_print);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * to_print
+RLC_VISIT_FUNCTION(print, rl_print__int8_t, print, void ,  to_print)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_print__int8_t_r_bool(bool * __result, int8_t * to_print);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * to_print
+RLC_VISIT_FUNCTION(can_print, rl_can_print__int8_t_r_bool, can_print, bool ,  to_print)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_max__int64_t_int64_t_r_int64_t(int64_t * __result, int64_t * a, int64_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * a, int64_t * b
+RLC_VISIT_FUNCTION(max, rl_max__int64_t_int64_t_r_int64_t, max, int64_t ,  a,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_max__int64_t_int64_t_r_bool(bool * __result, int64_t * a, int64_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * a, int64_t * b
+RLC_VISIT_FUNCTION(can_max, rl_can_max__int64_t_int64_t_r_bool, can_max, bool ,  a,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_min__int64_t_int64_t_r_int64_t(int64_t * __result, int64_t * a, int64_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * a, int64_t * b
+RLC_VISIT_FUNCTION(min, rl_min__int64_t_int64_t_r_int64_t, min, int64_t ,  a,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_min__int64_t_int64_t_r_bool(bool * __result, int64_t * a, int64_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * a, int64_t * b
+RLC_VISIT_FUNCTION(can_min, rl_can_min__int64_t_int64_t_r_bool, can_min, bool ,  a,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_sqrt__double_r_double(double * __result, double * f);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS double * f
+RLC_VISIT_FUNCTION(sqrt, rl_sqrt__double_r_double, sqrt, double ,  f)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_sqrt__double_r_bool(bool * __result, double * f);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS double * f
+RLC_VISIT_FUNCTION(can_sqrt, rl_can_sqrt__double_r_bool, can_sqrt, bool ,  f)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_abs__int64_t_r_int64_t(int64_t * __result, int64_t * a);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int64_t * a
+RLC_VISIT_FUNCTION(abs, rl_abs__int64_t_r_int64_t, abs, int64_t ,  a)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_abs__int64_t_r_bool(bool * __result, int64_t * a);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int64_t * a
+RLC_VISIT_FUNCTION(can_abs, rl_can_abs__int64_t_r_bool, can_abs, bool ,  a)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_near__double_double_double_r_bool(bool * __result, double * value, double * target, double * distance);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * value, double * target, double * distance
+RLC_VISIT_FUNCTION(near, rl_near__double_double_double_r_bool, near, bool ,  value,  target,  distance)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_near__double_double_double_r_bool(bool * __result, double * value, double * target, double * distance);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * value, double * target, double * distance
+RLC_VISIT_FUNCTION(can_near, rl_can_near__double_double_double_r_bool, can_near, bool ,  value,  target,  distance)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_custom_equal__int64_t_int64_t_r_bool(bool * __result, int64_t * lhs, int64_t * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * lhs, int64_t * rhs
+RLC_VISIT_FUNCTION(custom_equal, rl_custom_equal__int64_t_int64_t_r_bool, custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_custom_equal__int64_t_int64_t_r_bool(bool * __result, int64_t * lhs, int64_t * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * lhs, int64_t * rhs
+RLC_VISIT_FUNCTION(can_custom_equal, rl_can_custom_equal__int64_t_int64_t_r_bool, can_custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_custom_equal__bool_bool_r_bool(bool * __result, bool * lhs, bool * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * lhs, bool * rhs
+RLC_VISIT_FUNCTION(custom_equal, rl_custom_equal__bool_bool_r_bool, custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_custom_equal__bool_bool_r_bool(bool * __result, bool * lhs, bool * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * lhs, bool * rhs
+RLC_VISIT_FUNCTION(can_custom_equal, rl_can_custom_equal__bool_bool_r_bool, can_custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_custom_equal__int8_t_int8_t_r_bool(bool * __result, int8_t * lhs, int8_t * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int8_t * lhs, int8_t * rhs
+RLC_VISIT_FUNCTION(custom_equal, rl_custom_equal__int8_t_int8_t_r_bool, custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_custom_equal__int8_t_int8_t_r_bool(bool * __result, int8_t * lhs, int8_t * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int8_t * lhs, int8_t * rhs
+RLC_VISIT_FUNCTION(can_custom_equal, rl_can_custom_equal__int8_t_int8_t_r_bool, can_custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_custom_equal__double_double_r_bool(bool * __result, double * lhs, double * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS double * lhs, double * rhs
+RLC_VISIT_FUNCTION(custom_equal, rl_custom_equal__double_double_r_bool, custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_custom_equal__double_double_r_bool(bool * __result, double * lhs, double * rhs);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS double * lhs, double * rhs
+RLC_VISIT_FUNCTION(can_custom_equal, rl_can_custom_equal__double_double_r_bool, can_custom_equal, bool ,  lhs,  rhs)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_and_execute__Game_AnyGameAction_VectorTint8_tT_int64_t(union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input, int64_t * read_bytes);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input, int64_t * read_bytes
+RLC_VISIT_FUNCTION(parse_and_execute, rl_parse_and_execute__Game_AnyGameAction_VectorTint8_tT_int64_t, Game_parse_and_execute, void ,  state,  variant,  input,  read_bytes)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_and_execute__Game_AnyGameAction_VectorTint8_tT_int64_t_r_bool(bool * __result, union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input, int64_t * read_bytes);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input, int64_t * read_bytes
+RLC_VISIT_FUNCTION(can_parse_and_execute, rl_can_parse_and_execute__Game_AnyGameAction_VectorTint8_tT_int64_t_r_bool, can_Game_parse_and_execute, bool ,  state,  variant,  input,  read_bytes)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_and_execute__Game_AnyGameAction_VectorTint8_tT(union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input
+RLC_VISIT_FUNCTION(parse_and_execute, rl_parse_and_execute__Game_AnyGameAction_VectorTint8_tT, Game_parse_and_execute, void ,  state,  variant,  input)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_and_execute__Game_AnyGameAction_VectorTint8_tT_r_bool(bool * __result, union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union Game * state, struct AnyGameAction * variant, union VectorTint8_tT * input
+RLC_VISIT_FUNCTION(can_parse_and_execute, rl_can_parse_and_execute__Game_AnyGameAction_VectorTint8_tT_r_bool, can_Game_parse_and_execute, bool ,  state,  variant,  input)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_enumerate__bool_VectorTboolT(bool * b, union VectorTboolT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * b, union VectorTboolT * output
+RLC_VISIT_FUNCTION(enumerate, rl_enumerate__bool_VectorTboolT, enumerate, void ,  b,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_enumerate__bool_VectorTboolT_r_bool(bool * __result, bool * b, union VectorTboolT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * b, union VectorTboolT * output
+RLC_VISIT_FUNCTION(can_enumerate, rl_can_enumerate__bool_VectorTboolT_r_bool, can_enumerate, bool ,  b,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_enumeration_error__int64_t_String_VectorTStringT(int64_t * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(enumeration_error, rl_enumeration_error__int64_t_String_VectorTStringT, enumeration_error, void ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_enumeration_error__int64_t_String_VectorTStringT_r_bool(bool * __result, int64_t * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(can_enumeration_error, rl_can_enumeration_error__int64_t_String_VectorTStringT_r_bool, can_enumeration_error, bool ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_enumeration_error__double_String_VectorTStringT(double * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(enumeration_error, rl_enumeration_error__double_String_VectorTStringT, enumeration_error, void ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_enumeration_error__double_String_VectorTStringT_r_bool(bool * __result, double * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(can_enumeration_error, rl_can_enumeration_error__double_String_VectorTStringT_r_bool, can_enumeration_error, bool ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_write_in_observation_tensor__int64_t_int64_t_int64_t_VectorTdoubleT_int64_t(int64_t * value, int64_t * min, int64_t * max, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 5
+#define RLC_ARGUMENTS int64_t * value, int64_t * min, int64_t * max, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(write_in_observation_tensor, rl_write_in_observation_tensor__int64_t_int64_t_int64_t_VectorTdoubleT_int64_t, write_in_observation_tensor, void ,  value,  min,  max,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_write_in_observation_tensor__int64_t_int64_t_int64_t_VectorTdoubleT_int64_t_r_bool(bool * __result, int64_t * value, int64_t * min, int64_t * max, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 5
+#define RLC_ARGUMENTS int64_t * value, int64_t * min, int64_t * max, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(can_write_in_observation_tensor, rl_can_write_in_observation_tensor__int64_t_int64_t_int64_t_VectorTdoubleT_int64_t_r_bool, can_write_in_observation_tensor, bool ,  value,  min,  max,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_write_in_observation_tensor__int64_t_int64_t_VectorTdoubleT_int64_t(int64_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS int64_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(write_in_observation_tensor, rl_write_in_observation_tensor__int64_t_int64_t_VectorTdoubleT_int64_t, write_in_observation_tensor, void ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_write_in_observation_tensor__int64_t_int64_t_VectorTdoubleT_int64_t_r_bool(bool * __result, int64_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS int64_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(can_write_in_observation_tensor, rl_can_write_in_observation_tensor__int64_t_int64_t_VectorTdoubleT_int64_t_r_bool, can_write_in_observation_tensor, bool ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_size_as_observation_tensor__int64_t_r_int64_t(int64_t * __result, int64_t * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int64_t * obj
+RLC_VISIT_FUNCTION(size_as_observation_tensor, rl_size_as_observation_tensor__int64_t_r_int64_t, size_as_observation_tensor, int64_t ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_size_as_observation_tensor__int64_t_r_bool(bool * __result, int64_t * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int64_t * obj
+RLC_VISIT_FUNCTION(can_size_as_observation_tensor, rl_can_size_as_observation_tensor__int64_t_r_bool, can_size_as_observation_tensor, bool ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_write_in_observation_tensor__double_int64_t_VectorTdoubleT_int64_t(double * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS double * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(write_in_observation_tensor, rl_write_in_observation_tensor__double_int64_t_VectorTdoubleT_int64_t, write_in_observation_tensor, void ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_write_in_observation_tensor__double_int64_t_VectorTdoubleT_int64_t_r_bool(bool * __result, double * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS double * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(can_write_in_observation_tensor, rl_can_write_in_observation_tensor__double_int64_t_VectorTdoubleT_int64_t_r_bool, can_write_in_observation_tensor, bool ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_size_as_observation_tensor__double_r_int64_t(int64_t * __result, double * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS double * obj
+RLC_VISIT_FUNCTION(size_as_observation_tensor, rl_size_as_observation_tensor__double_r_int64_t, size_as_observation_tensor, int64_t ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_size_as_observation_tensor__double_r_bool(bool * __result, double * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS double * obj
+RLC_VISIT_FUNCTION(can_size_as_observation_tensor, rl_can_size_as_observation_tensor__double_r_bool, can_size_as_observation_tensor, bool ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_write_in_observation_tensor__bool_int64_t_VectorTdoubleT_int64_t(bool * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS bool * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(write_in_observation_tensor, rl_write_in_observation_tensor__bool_int64_t_VectorTdoubleT_int64_t, write_in_observation_tensor, void ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_write_in_observation_tensor__bool_int64_t_VectorTdoubleT_int64_t_r_bool(bool * __result, bool * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS bool * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(can_write_in_observation_tensor, rl_can_write_in_observation_tensor__bool_int64_t_VectorTdoubleT_int64_t_r_bool, can_write_in_observation_tensor, bool ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_size_as_observation_tensor__bool_r_int64_t(int64_t * __result, bool * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS bool * obj
+RLC_VISIT_FUNCTION(size_as_observation_tensor, rl_size_as_observation_tensor__bool_r_int64_t, size_as_observation_tensor, int64_t ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_size_as_observation_tensor__bool_r_bool(bool * __result, bool * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS bool * obj
+RLC_VISIT_FUNCTION(can_size_as_observation_tensor, rl_can_size_as_observation_tensor__bool_r_bool, can_size_as_observation_tensor, bool ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_write_in_observation_tensor__int8_t_int64_t_VectorTdoubleT_int64_t(int8_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS int8_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(write_in_observation_tensor, rl_write_in_observation_tensor__int8_t_int64_t_VectorTdoubleT_int64_t, write_in_observation_tensor, void ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_write_in_observation_tensor__int8_t_int64_t_VectorTdoubleT_int64_t_r_bool(bool * __result, int8_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS int8_t * obj, int64_t * observer_id, union VectorTdoubleT * output, int64_t * index
+RLC_VISIT_FUNCTION(can_write_in_observation_tensor, rl_can_write_in_observation_tensor__int8_t_int64_t_VectorTdoubleT_int64_t_r_bool, can_write_in_observation_tensor, bool ,  obj,  observer_id,  output,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_size_as_observation_tensor__int8_t_r_int64_t(int64_t * __result, int8_t * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * obj
+RLC_VISIT_FUNCTION(size_as_observation_tensor, rl_size_as_observation_tensor__int8_t_r_int64_t, size_as_observation_tensor, int64_t ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_size_as_observation_tensor__int8_t_r_bool(bool * __result, int8_t * obj);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * obj
+RLC_VISIT_FUNCTION(can_size_as_observation_tensor, rl_can_size_as_observation_tensor__int8_t_r_bool, can_size_as_observation_tensor, bool ,  obj)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_write_tensor_warning_context__String_VectorTStringT(union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(write_tensor_warning_context, rl_write_tensor_warning_context__String_VectorTStringT, String_write_tensor_warning_context, void ,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_write_tensor_warning_context__String_VectorTStringT_r_bool(bool * __result, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(can_write_tensor_warning_context, rl_can_write_tensor_warning_context__String_VectorTStringT_r_bool, can_String_write_tensor_warning_context, bool ,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_tensorable_warning__int64_t_String_VectorTStringT(int64_t * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(tensorable_warning, rl_tensorable_warning__int64_t_String_VectorTStringT, tensorable_warning, void ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_tensorable_warning__int64_t_String_VectorTStringT_r_bool(bool * __result, int64_t * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(can_tensorable_warning, rl_can_tensorable_warning__int64_t_String_VectorTStringT_r_bool, can_tensorable_warning, bool ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_tensorable_warning__double_String_VectorTStringT(double * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(tensorable_warning, rl_tensorable_warning__double_String_VectorTStringT, tensorable_warning, void ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_tensorable_warning__double_String_VectorTStringT_r_bool(bool * __result, double * x, union String * out, union VectorTStringT * context);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * x, union String * out, union VectorTStringT * context
+RLC_VISIT_FUNCTION(can_tensorable_warning, rl_can_tensorable_warning__double_String_VectorTStringT_r_bool, can_tensorable_warning, bool ,  x,  out,  context)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_vector__int64_t_VectorTint8_tT(int64_t * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(append_to_vector, rl_append_to_vector__int64_t_VectorTint8_tT, append_to_vector, void ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_vector__int64_t_VectorTint8_tT_r_bool(bool * __result, int64_t * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(can_append_to_vector, rl_can_append_to_vector__int64_t_VectorTint8_tT_r_bool, can_append_to_vector, bool ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_vector__double_VectorTint8_tT(double * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS double * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(append_to_vector, rl_append_to_vector__double_VectorTint8_tT, append_to_vector, void ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_vector__double_VectorTint8_tT_r_bool(bool * __result, double * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS double * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(can_append_to_vector, rl_can_append_to_vector__double_VectorTint8_tT_r_bool, can_append_to_vector, bool ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_vector__bool_VectorTint8_tT(bool * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(append_to_vector, rl_append_to_vector__bool_VectorTint8_tT, append_to_vector, void ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_vector__bool_VectorTint8_tT_r_bool(bool * __result, bool * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(can_append_to_vector, rl_can_append_to_vector__bool_VectorTint8_tT_r_bool, can_append_to_vector, bool ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_vector__int8_t_VectorTint8_tT(int8_t * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int8_t * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(append_to_vector, rl_append_to_vector__int8_t_VectorTint8_tT, append_to_vector, void ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_vector__int8_t_VectorTint8_tT_r_bool(bool * __result, int8_t * to_add, union VectorTint8_tT * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int8_t * to_add, union VectorTint8_tT * output
+RLC_VISIT_FUNCTION(can_append_to_vector, rl_can_append_to_vector__int8_t_VectorTint8_tT_r_bool, can_append_to_vector, bool ,  to_add,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_from_vector__int64_t_VectorTint8_tT_int64_t_r_bool(bool * __result, int64_t * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(parse_from_vector, rl_parse_from_vector__int64_t_VectorTint8_tT_int64_t_r_bool, parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_from_vector__int64_t_VectorTint8_tT_int64_t_r_bool(bool * __result, int64_t * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_from_vector, rl_can_parse_from_vector__int64_t_VectorTint8_tT_int64_t_r_bool, can_parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_from_vector__double_VectorTint8_tT_int64_t_r_bool(bool * __result, double * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(parse_from_vector, rl_parse_from_vector__double_VectorTint8_tT_int64_t_r_bool, parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_from_vector__double_VectorTint8_tT_int64_t_r_bool(bool * __result, double * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_from_vector, rl_can_parse_from_vector__double_VectorTint8_tT_int64_t_r_bool, can_parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_from_vector__bool_VectorTint8_tT_int64_t_r_bool(bool * __result, bool * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS bool * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(parse_from_vector, rl_parse_from_vector__bool_VectorTint8_tT_int64_t_r_bool, parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_from_vector__bool_VectorTint8_tT_int64_t_r_bool(bool * __result, bool * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS bool * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_from_vector, rl_can_parse_from_vector__bool_VectorTint8_tT_int64_t_r_bool, can_parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_from_vector__int8_t_VectorTint8_tT_int64_t_r_bool(bool * __result, int8_t * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int8_t * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(parse_from_vector, rl_parse_from_vector__int8_t_VectorTint8_tT_int64_t_r_bool, parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_from_vector__int8_t_VectorTint8_tT_int64_t_r_bool(bool * __result, int8_t * result, union VectorTint8_tT * input, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int8_t * result, union VectorTint8_tT * input, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_from_vector, rl_can_parse_from_vector__int8_t_VectorTint8_tT_int64_t_r_bool, can_parse_from_vector, bool ,  result,  input,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_from_byte_vector__int8_t_VectorTint8_tT_int64_t_r_bool(bool * __result, int8_t * result, union VectorTint8_tT * input, int64_t * read_bytes);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int8_t * result, union VectorTint8_tT * input, int64_t * read_bytes
+RLC_VISIT_FUNCTION(from_byte_vector, rl_from_byte_vector__int8_t_VectorTint8_tT_int64_t_r_bool, from_byte_vector, bool ,  result,  input,  read_bytes)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_from_byte_vector__int8_t_VectorTint8_tT_int64_t_r_bool(bool * __result, int8_t * result, union VectorTint8_tT * input, int64_t * read_bytes);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int8_t * result, union VectorTint8_tT * input, int64_t * read_bytes
+RLC_VISIT_FUNCTION(can_from_byte_vector, rl_can_from_byte_vector__int8_t_VectorTint8_tT_int64_t_r_bool, can_from_byte_vector, bool ,  result,  input,  read_bytes)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_from_byte_vector__AnyGameAction_VectorTint8_tT_int64_t_r_bool(bool * __result, struct AnyGameAction * result, union VectorTint8_tT * input, int64_t * read_bytes);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS struct AnyGameAction * result, union VectorTint8_tT * input, int64_t * read_bytes
+RLC_VISIT_FUNCTION(from_byte_vector, rl_from_byte_vector__AnyGameAction_VectorTint8_tT_int64_t_r_bool, from_byte_vector, bool ,  result,  input,  read_bytes)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_from_byte_vector__AnyGameAction_VectorTint8_tT_int64_t_r_bool(bool * __result, struct AnyGameAction * result, union VectorTint8_tT * input, int64_t * read_bytes);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS struct AnyGameAction * result, union VectorTint8_tT * input, int64_t * read_bytes
+RLC_VISIT_FUNCTION(can_from_byte_vector, rl_can_from_byte_vector__AnyGameAction_VectorTint8_tT_int64_t_r_bool, can_from_byte_vector, bool ,  result,  input,  read_bytes)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__VectorTCoordsT(union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(init, rl_m_init__VectorTCoordsT, Vector_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__VectorTCoordsT_r_bool(bool * __result, union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__VectorTCoordsT_r_bool, can_Vector_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__VectorTint8_tT(union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(init, rl_m_init__VectorTint8_tT, Vector_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__VectorTint8_tT_r_bool(bool * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__VectorTint8_tT_r_bool, can_Vector_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__VectorTdoubleT(union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(init, rl_m_init__VectorTdoubleT, Vector_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__VectorTdoubleT_r_bool(bool * __result, union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__VectorTdoubleT_r_bool, can_Vector_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__VectorTStringT(union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(init, rl_m_init__VectorTStringT, Vector_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__VectorTStringT_r_bool(bool * __result, union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__VectorTStringT_r_bool, can_Vector_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__VectorTboolT(union VectorTboolT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTboolT * self
+RLC_VISIT_FUNCTION(init, rl_m_init__VectorTboolT, Vector_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__VectorTboolT_r_bool(bool * __result, union VectorTboolT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTboolT * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__VectorTboolT_r_bool, can_Vector_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop__VectorTint8_tT(union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(drop, rl_m_drop__VectorTint8_tT, Vector_drop, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop__VectorTint8_tT_r_bool(bool * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(can_drop, rl_m_can_drop__VectorTint8_tT_r_bool, can_Vector_drop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop__VectorTCoordsT(union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(drop, rl_m_drop__VectorTCoordsT, Vector_drop, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop__VectorTCoordsT_r_bool(bool * __result, union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(can_drop, rl_m_can_drop__VectorTCoordsT_r_bool, can_Vector_drop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop__VectorTdoubleT(union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(drop, rl_m_drop__VectorTdoubleT, Vector_drop, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop__VectorTdoubleT_r_bool(bool * __result, union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(can_drop, rl_m_can_drop__VectorTdoubleT_r_bool, can_Vector_drop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop__VectorTStringT(union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(drop, rl_m_drop__VectorTStringT, Vector_drop, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop__VectorTStringT_r_bool(bool * __result, union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(can_drop, rl_m_can_drop__VectorTStringT_r_bool, can_Vector_drop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop__VectorTboolT(union VectorTboolT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTboolT * self
+RLC_VISIT_FUNCTION(drop, rl_m_drop__VectorTboolT, Vector_drop, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop__VectorTboolT_r_bool(bool * __result, union VectorTboolT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTboolT * self
+RLC_VISIT_FUNCTION(can_drop, rl_m_can_drop__VectorTboolT_r_bool, can_Vector_drop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__VectorTCoordsT_VectorTCoordsT(union VectorTCoordsT * self, union VectorTCoordsT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTCoordsT * self, union VectorTCoordsT * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__VectorTCoordsT_VectorTCoordsT, Vector_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__VectorTCoordsT_VectorTCoordsT_r_bool(bool * __result, union VectorTCoordsT * self, union VectorTCoordsT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTCoordsT * self, union VectorTCoordsT * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__VectorTCoordsT_VectorTCoordsT_r_bool, can_Vector_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__VectorTint8_tT_VectorTint8_tT(union VectorTint8_tT * self, union VectorTint8_tT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, union VectorTint8_tT * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__VectorTint8_tT_VectorTint8_tT, Vector_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__VectorTint8_tT_VectorTint8_tT_r_bool(bool * __result, union VectorTint8_tT * self, union VectorTint8_tT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, union VectorTint8_tT * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__VectorTint8_tT_VectorTint8_tT_r_bool, can_Vector_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__VectorTStringT_VectorTStringT(union VectorTStringT * self, union VectorTStringT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTStringT * self, union VectorTStringT * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__VectorTStringT_VectorTStringT, Vector_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__VectorTStringT_VectorTStringT_r_bool(bool * __result, union VectorTStringT * self, union VectorTStringT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTStringT * self, union VectorTStringT * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__VectorTStringT_VectorTStringT_r_bool, can_Vector_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__VectorTdoubleT_VectorTdoubleT(union VectorTdoubleT * self, union VectorTdoubleT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, union VectorTdoubleT * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__VectorTdoubleT_VectorTdoubleT, Vector_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__VectorTdoubleT_VectorTdoubleT_r_bool(bool * __result, union VectorTdoubleT * self, union VectorTdoubleT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, union VectorTdoubleT * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__VectorTdoubleT_VectorTdoubleT_r_bool, can_Vector_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__VectorTboolT_VectorTboolT(union VectorTboolT * self, union VectorTboolT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTboolT * self, union VectorTboolT * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__VectorTboolT_VectorTboolT, Vector_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__VectorTboolT_VectorTboolT_r_bool(bool * __result, union VectorTboolT * self, union VectorTboolT * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTboolT * self, union VectorTboolT * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__VectorTboolT_VectorTboolT_r_bool, can_Vector_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_resize__VectorTdoubleT_int64_t(union VectorTdoubleT * self, int64_t * new_size);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, int64_t * new_size
+RLC_VISIT_FUNCTION(resize, rl_m_resize__VectorTdoubleT_int64_t, Vector_resize, void ,  self,  new_size)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_resize__VectorTdoubleT_int64_t_r_bool(bool * __result, union VectorTdoubleT * self, int64_t * new_size);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, int64_t * new_size
+RLC_VISIT_FUNCTION(can_resize, rl_m_can_resize__VectorTdoubleT_int64_t_r_bool, can_Vector_resize, bool ,  self,  new_size)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_back__VectorTint8_tT_r_int8_tRef(int8_t* * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(back, rl_m_back__VectorTint8_tT_r_int8_tRef, Vector_back, int8_t* ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_back__VectorTint8_tT_r_bool(bool * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(can_back, rl_m_can_back__VectorTint8_tT_r_bool, can_Vector_back, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_back__VectorTCoordsT_r_CoordsRef(union Coords* * __result, union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(back, rl_m_back__VectorTCoordsT_r_CoordsRef, Vector_back, union Coords* ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_back__VectorTCoordsT_r_bool(bool * __result, union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(can_back, rl_m_can_back__VectorTCoordsT_r_bool, can_Vector_back, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get__VectorTint8_tT_int64_t_r_int8_tRef(int8_t* * __result, union VectorTint8_tT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, int64_t * index
+RLC_VISIT_FUNCTION(get, rl_m_get__VectorTint8_tT_int64_t_r_int8_tRef, Vector_get, int8_t* ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get__VectorTint8_tT_int64_t_r_bool(bool * __result, union VectorTint8_tT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, int64_t * index
+RLC_VISIT_FUNCTION(can_get, rl_m_can_get__VectorTint8_tT_int64_t_r_bool, can_Vector_get, bool ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get__VectorTdoubleT_int64_t_r_doubleRef(double* * __result, union VectorTdoubleT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, int64_t * index
+RLC_VISIT_FUNCTION(get, rl_m_get__VectorTdoubleT_int64_t_r_doubleRef, Vector_get, double* ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get__VectorTdoubleT_int64_t_r_bool(bool * __result, union VectorTdoubleT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, int64_t * index
+RLC_VISIT_FUNCTION(can_get, rl_m_can_get__VectorTdoubleT_int64_t_r_bool, can_Vector_get, bool ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get__VectorTStringT_int64_t_r_StringRef(union String* * __result, union VectorTStringT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTStringT * self, int64_t * index
+RLC_VISIT_FUNCTION(get, rl_m_get__VectorTStringT_int64_t_r_StringRef, Vector_get, union String* ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get__VectorTStringT_int64_t_r_bool(bool * __result, union VectorTStringT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTStringT * self, int64_t * index
+RLC_VISIT_FUNCTION(can_get, rl_m_can_get__VectorTStringT_int64_t_r_bool, can_Vector_get, bool ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get__VectorTCoordsT_int64_t_r_CoordsRef(union Coords* * __result, union VectorTCoordsT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTCoordsT * self, int64_t * index
+RLC_VISIT_FUNCTION(get, rl_m_get__VectorTCoordsT_int64_t_r_CoordsRef, Vector_get, union Coords* ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get__VectorTCoordsT_int64_t_r_bool(bool * __result, union VectorTCoordsT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTCoordsT * self, int64_t * index
+RLC_VISIT_FUNCTION(can_get, rl_m_can_get__VectorTCoordsT_int64_t_r_bool, can_Vector_get, bool ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get__VectorTboolT_int64_t_r_boolRef(bool* * __result, union VectorTboolT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTboolT * self, int64_t * index
+RLC_VISIT_FUNCTION(get, rl_m_get__VectorTboolT_int64_t_r_boolRef, Vector_get, bool* ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get__VectorTboolT_int64_t_r_bool(bool * __result, union VectorTboolT * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTboolT * self, int64_t * index
+RLC_VISIT_FUNCTION(can_get, rl_m_can_get__VectorTboolT_int64_t_r_bool, can_Vector_get, bool ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__VectorTint8_tT_int8_t(union VectorTint8_tT * self, int8_t * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, int8_t * value
+RLC_VISIT_FUNCTION(append, rl_m_append__VectorTint8_tT_int8_t, Vector_append, void ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__VectorTint8_tT_int8_t_r_bool(bool * __result, union VectorTint8_tT * self, int8_t * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, int8_t * value
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__VectorTint8_tT_int8_t_r_bool, can_Vector_append, bool ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__VectorTboolT_bool(union VectorTboolT * self, bool * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTboolT * self, bool * value
+RLC_VISIT_FUNCTION(append, rl_m_append__VectorTboolT_bool, Vector_append, void ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__VectorTboolT_bool_r_bool(bool * __result, union VectorTboolT * self, bool * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTboolT * self, bool * value
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__VectorTboolT_bool_r_bool, can_Vector_append, bool ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__VectorTStringT_String(union VectorTStringT * self, union String * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTStringT * self, union String * value
+RLC_VISIT_FUNCTION(append, rl_m_append__VectorTStringT_String, Vector_append, void ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__VectorTStringT_String_r_bool(bool * __result, union VectorTStringT * self, union String * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTStringT * self, union String * value
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__VectorTStringT_String_r_bool, can_Vector_append, bool ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__VectorTdoubleT_double(union VectorTdoubleT * self, double * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, double * value
+RLC_VISIT_FUNCTION(append, rl_m_append__VectorTdoubleT_double, Vector_append, void ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__VectorTdoubleT_double_r_bool(bool * __result, union VectorTdoubleT * self, double * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTdoubleT * self, double * value
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__VectorTdoubleT_double_r_bool, can_Vector_append, bool ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__VectorTCoordsT_Coords(union VectorTCoordsT * self, union Coords * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTCoordsT * self, union Coords * value
+RLC_VISIT_FUNCTION(append, rl_m_append__VectorTCoordsT_Coords, Vector_append, void ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__VectorTCoordsT_Coords_r_bool(bool * __result, union VectorTCoordsT * self, union Coords * value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTCoordsT * self, union Coords * value
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__VectorTCoordsT_Coords_r_bool, can_Vector_append, bool ,  self,  value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_pop__VectorTStringT_r_String(union String * __result, union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(pop, rl_m_pop__VectorTStringT_r_String, Vector_pop, union String ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_pop__VectorTStringT_r_bool(bool * __result, union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(can_pop, rl_m_can_pop__VectorTStringT_r_bool, can_Vector_pop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_pop__VectorTint8_tT_r_int8_t(int8_t * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(pop, rl_m_pop__VectorTint8_tT_r_int8_t, Vector_pop, int8_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_pop__VectorTint8_tT_r_bool(bool * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(can_pop, rl_m_can_pop__VectorTint8_tT_r_bool, can_Vector_pop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_pop__VectorTdoubleT_r_double(double * __result, union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(pop, rl_m_pop__VectorTdoubleT_r_double, Vector_pop, double ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_pop__VectorTdoubleT_r_bool(bool * __result, union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(can_pop, rl_m_can_pop__VectorTdoubleT_r_bool, can_Vector_pop, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop_back__VectorTint8_tT_int64_t(union VectorTint8_tT * self, int64_t * quantity);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, int64_t * quantity
+RLC_VISIT_FUNCTION(drop_back, rl_m_drop_back__VectorTint8_tT_int64_t, Vector_drop_back, void ,  self,  quantity)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop_back__VectorTint8_tT_int64_t_r_bool(bool * __result, union VectorTint8_tT * self, int64_t * quantity);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union VectorTint8_tT * self, int64_t * quantity
+RLC_VISIT_FUNCTION(can_drop_back, rl_m_can_drop_back__VectorTint8_tT_int64_t_r_bool, can_Vector_drop_back, bool ,  self,  quantity)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_size__VectorTint8_tT_r_int64_t(int64_t * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(size, rl_m_size__VectorTint8_tT_r_int64_t, Vector_size, int64_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_size__VectorTint8_tT_r_bool(bool * __result, union VectorTint8_tT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * self
+RLC_VISIT_FUNCTION(can_size, rl_m_can_size__VectorTint8_tT_r_bool, can_Vector_size, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_size__VectorTdoubleT_r_int64_t(int64_t * __result, union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(size, rl_m_size__VectorTdoubleT_r_int64_t, Vector_size, int64_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_size__VectorTdoubleT_r_bool(bool * __result, union VectorTdoubleT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTdoubleT * self
+RLC_VISIT_FUNCTION(can_size, rl_m_can_size__VectorTdoubleT_r_bool, can_Vector_size, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_size__VectorTStringT_r_int64_t(int64_t * __result, union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(size, rl_m_size__VectorTStringT_r_int64_t, Vector_size, int64_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_size__VectorTStringT_r_bool(bool * __result, union VectorTStringT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTStringT * self
+RLC_VISIT_FUNCTION(can_size, rl_m_can_size__VectorTStringT_r_bool, can_Vector_size, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_size__VectorTCoordsT_r_int64_t(int64_t * __result, union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(size, rl_m_size__VectorTCoordsT_r_int64_t, Vector_size, int64_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_size__VectorTCoordsT_r_bool(bool * __result, union VectorTCoordsT * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTCoordsT * self
+RLC_VISIT_FUNCTION(can_size, rl_m_can_size__VectorTCoordsT_r_bool, can_Vector_size, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__String(union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(init, rl_m_init__String, String_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__String_r_bool(bool * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__String_r_bool, can_String_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__String_int8_t(union String * self, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int8_t * b
+RLC_VISIT_FUNCTION(append, rl_m_append__String_int8_t, String_append, void ,  self,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__String_int8_t_r_bool(bool * __result, union String * self, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int8_t * b
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__String_int8_t_r_bool, can_String_append, bool ,  self,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get__String_int64_t_r_int8_tRef(int8_t* * __result, union String * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int64_t * index
+RLC_VISIT_FUNCTION(get, rl_m_get__String_int64_t_r_int8_tRef, String_get, int8_t* ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get__String_int64_t_r_bool(bool * __result, union String * self, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int64_t * index
+RLC_VISIT_FUNCTION(can_get, rl_m_can_get__String_int64_t_r_bool, can_String_get, bool ,  self,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_substring_matches__String_strlit_int64_t_r_bool(bool * __result, union String * self, char* * lit, int64_t * pos);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union String * self, char* * lit, int64_t * pos
+RLC_VISIT_FUNCTION(substring_matches, rl_m_substring_matches__String_strlit_int64_t_r_bool, String_substring_matches, bool ,  self,  lit,  pos)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_substring_matches__String_strlit_int64_t_r_bool(bool * __result, union String * self, char* * lit, int64_t * pos);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union String * self, char* * lit, int64_t * pos
+RLC_VISIT_FUNCTION(can_substring_matches, rl_m_can_substring_matches__String_strlit_int64_t_r_bool, can_String_substring_matches, bool ,  self,  lit,  pos)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_size__String_r_int64_t(int64_t * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(size, rl_m_size__String_r_int64_t, String_size, int64_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_size__String_r_bool(bool * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(can_size, rl_m_can_size__String_r_bool, can_String_size, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_count__String_int8_t_r_int64_t(int64_t * __result, union String * self, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int8_t * b
+RLC_VISIT_FUNCTION(count, rl_m_count__String_int8_t_r_int64_t, String_count, int64_t ,  self,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_count__String_int8_t_r_bool(bool * __result, union String * self, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int8_t * b
+RLC_VISIT_FUNCTION(can_count, rl_m_can_count__String_int8_t_r_bool, can_String_count, bool ,  self,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__String_strlit(union String * self, char* * str);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, char* * str
+RLC_VISIT_FUNCTION(append, rl_m_append__String_strlit, String_append, void ,  self,  str)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__String_strlit_r_bool(bool * __result, union String * self, char* * str);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, char* * str
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__String_strlit_r_bool, can_String_append, bool ,  self,  str)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append__String_String(union String * self, union String * str);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * str
+RLC_VISIT_FUNCTION(append, rl_m_append__String_String, String_append, void ,  self,  str)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append__String_String_r_bool(bool * __result, union String * self, union String * str);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * str
+RLC_VISIT_FUNCTION(can_append, rl_m_can_append__String_String_r_bool, can_String_append, bool ,  self,  str)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_append_quoted__String_String(union String * self, union String * str);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * str
+RLC_VISIT_FUNCTION(append_quoted, rl_m_append_quoted__String_String, String_append_quoted, void ,  self,  str)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_append_quoted__String_String_r_bool(bool * __result, union String * self, union String * str);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * str
+RLC_VISIT_FUNCTION(can_append_quoted, rl_m_can_append_quoted__String_String_r_bool, can_String_append_quoted, bool ,  self,  str)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_add__String_String_r_String(union String * __result, union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(add, rl_m_add__String_String_r_String, String_add, union String ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_add__String_String_r_bool(bool * __result, union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(can_add, rl_m_can_add__String_String_r_bool, can_String_add, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_equal__String_strlit_r_bool(bool * __result, union String * self, char* * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, char* * other
+RLC_VISIT_FUNCTION(equal, rl_m_equal__String_strlit_r_bool, String_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_equal__String_strlit_r_bool(bool * __result, union String * self, char* * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, char* * other
+RLC_VISIT_FUNCTION(can_equal, rl_m_can_equal__String_strlit_r_bool, can_String_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_equal__String_String_r_bool(bool * __result, union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(equal, rl_m_equal__String_String_r_bool, String_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_equal__String_String_r_bool(bool * __result, union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(can_equal, rl_m_can_equal__String_String_r_bool, can_String_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_not_equal__String_String_r_bool(bool * __result, union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(not_equal, rl_m_not_equal__String_String_r_bool, String_not_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_not_equal__String_String_r_bool(bool * __result, union String * self, union String * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, union String * other
+RLC_VISIT_FUNCTION(can_not_equal, rl_m_can_not_equal__String_String_r_bool, can_String_not_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_not_equal__String_strlit_r_bool(bool * __result, union String * self, char* * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, char* * other
+RLC_VISIT_FUNCTION(not_equal, rl_m_not_equal__String_strlit_r_bool, String_not_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_not_equal__String_strlit_r_bool(bool * __result, union String * self, char* * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, char* * other
+RLC_VISIT_FUNCTION(can_not_equal, rl_m_can_not_equal__String_strlit_r_bool, can_String_not_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_drop_back__String_int64_t(union String * self, int64_t * quantity);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int64_t * quantity
+RLC_VISIT_FUNCTION(drop_back, rl_m_drop_back__String_int64_t, String_drop_back, void ,  self,  quantity)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_drop_back__String_int64_t_r_bool(bool * __result, union String * self, int64_t * quantity);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * self, int64_t * quantity
+RLC_VISIT_FUNCTION(can_drop_back, rl_m_can_drop_back__String_int64_t_r_bool, can_String_drop_back, bool ,  self,  quantity)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_back__String_r_int8_tRef(int8_t* * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(back, rl_m_back__String_r_int8_tRef, String_back, int8_t* ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_back__String_r_bool(bool * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(can_back, rl_m_can_back__String_r_bool, can_String_back, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_reverse__String(union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(reverse, rl_m_reverse__String, String_reverse, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_reverse__String_r_bool(bool * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(can_reverse, rl_m_can_reverse__String_r_bool, can_String_reverse, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_to_indented_lines__String_r_String(union String * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(to_indented_lines, rl_m_to_indented_lines__String_r_String, String_to_indented_lines, union String ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_to_indented_lines__String_r_bool(bool * __result, union String * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union String * self
+RLC_VISIT_FUNCTION(can_to_indented_lines, rl_m_can_to_indented_lines__String_r_bool, can_String_to_indented_lines, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_s__strlit_r_String(union String * __result, char* * literal);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * literal
+RLC_VISIT_FUNCTION(s, rl_s__strlit_r_String, s, union String ,  literal)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_s__strlit_r_bool(bool * __result, char* * literal);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * literal
+RLC_VISIT_FUNCTION(can_s, rl_can_s__strlit_r_bool, can_s, bool ,  literal)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_string__strlit_String(char* * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS char* * x, union String * output
+RLC_VISIT_FUNCTION(append_to_string, rl_append_to_string__strlit_String, append_to_string, void ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_string__strlit_String_r_bool(bool * __result, char* * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS char* * x, union String * output
+RLC_VISIT_FUNCTION(can_append_to_string, rl_can_append_to_string__strlit_String_r_bool, can_append_to_string, bool ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_load_file__String_String_r_bool(bool * __result, union String * file_name, union String * out);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * file_name, union String * out
+RLC_VISIT_FUNCTION(load_file, rl_load_file__String_String_r_bool, String_load_file, bool ,  file_name,  out)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_load_file__String_String_r_bool(bool * __result, union String * file_name, union String * out);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * file_name, union String * out
+RLC_VISIT_FUNCTION(can_load_file, rl_can_load_file__String_String_r_bool, can_String_load_file, bool ,  file_name,  out)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_string__int64_t_String(int64_t * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * x, union String * output
+RLC_VISIT_FUNCTION(append_to_string, rl_append_to_string__int64_t_String, append_to_string, void ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_string__int64_t_String_r_bool(bool * __result, int64_t * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int64_t * x, union String * output
+RLC_VISIT_FUNCTION(can_append_to_string, rl_can_append_to_string__int64_t_String_r_bool, can_append_to_string, bool ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_string__int8_t_String(int8_t * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int8_t * x, union String * output
+RLC_VISIT_FUNCTION(append_to_string, rl_append_to_string__int8_t_String, append_to_string, void ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_string__int8_t_String_r_bool(bool * __result, int8_t * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS int8_t * x, union String * output
+RLC_VISIT_FUNCTION(can_append_to_string, rl_can_append_to_string__int8_t_String_r_bool, can_append_to_string, bool ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_string__double_String(double * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS double * x, union String * output
+RLC_VISIT_FUNCTION(append_to_string, rl_append_to_string__double_String, append_to_string, void ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_string__double_String_r_bool(bool * __result, double * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS double * x, union String * output
+RLC_VISIT_FUNCTION(can_append_to_string, rl_can_append_to_string__double_String_r_bool, can_append_to_string, bool ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_string__String_String(union String * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * x, union String * output
+RLC_VISIT_FUNCTION(append_to_string, rl_append_to_string__String_String, String_append_to_string, void ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_string__String_String_r_bool(bool * __result, union String * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union String * x, union String * output
+RLC_VISIT_FUNCTION(can_append_to_string, rl_can_append_to_string__String_String_r_bool, can_String_append_to_string, bool ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_append_to_string__bool_String(bool * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * x, union String * output
+RLC_VISIT_FUNCTION(append_to_string, rl_append_to_string__bool_String, append_to_string, void ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_append_to_string__bool_String_r_bool(bool * __result, bool * x, union String * output);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS bool * x, union String * output
+RLC_VISIT_FUNCTION(can_append_to_string, rl_can_append_to_string__bool_String_r_bool, can_append_to_string, bool ,  x,  output)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_to_string__int8_t_r_String(union String * __result, int8_t * to_stringyfi);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * to_stringyfi
+RLC_VISIT_FUNCTION(to_string, rl_to_string__int8_t_r_String, to_string, union String ,  to_stringyfi)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_to_string__int8_t_r_bool(bool * __result, int8_t * to_stringyfi);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * to_stringyfi
+RLC_VISIT_FUNCTION(can_to_string, rl_can_to_string__int8_t_r_bool, can_to_string, bool ,  to_stringyfi)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_is_space__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(is_space, rl_is_space__int8_t_r_bool, is_space, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_is_space__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(can_is_space, rl_can_is_space__int8_t_r_bool, can_is_space, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_is_alphanumeric__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(is_alphanumeric, rl_is_alphanumeric__int8_t_r_bool, is_alphanumeric, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_is_alphanumeric__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(can_is_alphanumeric, rl_can_is_alphanumeric__int8_t_r_bool, can_is_alphanumeric, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_is_open_paren__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(is_open_paren, rl_is_open_paren__int8_t_r_bool, is_open_paren, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_is_open_paren__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(can_is_open_paren, rl_can_is_open_paren__int8_t_r_bool, can_is_open_paren, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_is_close_paren__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(is_close_paren, rl_is_close_paren__int8_t_r_bool, is_close_paren, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_is_close_paren__int8_t_r_bool(bool * __result, int8_t * b);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS int8_t * b
+RLC_VISIT_FUNCTION(can_is_close_paren, rl_can_is_close_paren__int8_t_r_bool, can_is_close_paren, bool ,  b)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_string__int64_t_String_int64_t_r_bool(bool * __result, int64_t * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(parse_string, rl_parse_string__int64_t_String_int64_t_r_bool, parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_string__int64_t_String_int64_t_r_bool(bool * __result, int64_t * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int64_t * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_string, rl_can_parse_string__int64_t_String_int64_t_r_bool, can_parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_string__int8_t_String_int64_t_r_bool(bool * __result, int8_t * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int8_t * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(parse_string, rl_parse_string__int8_t_String_int64_t_r_bool, parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_string__int8_t_String_int64_t_r_bool(bool * __result, int8_t * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS int8_t * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_string, rl_can_parse_string__int8_t_String_int64_t_r_bool, can_parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_string__double_String_int64_t_r_bool(bool * __result, double * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(parse_string, rl_parse_string__double_String_int64_t_r_bool, parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_string__double_String_int64_t_r_bool(bool * __result, double * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS double * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_string, rl_can_parse_string__double_String_int64_t_r_bool, can_parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_length__strlit_r_int64_t(int64_t * __result, char* * literal);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * literal
+RLC_VISIT_FUNCTION(length, rl_length__strlit_r_int64_t, length, int64_t ,  literal)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_length__strlit_r_bool(bool * __result, char* * literal);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS char* * literal
+RLC_VISIT_FUNCTION(can_length, rl_can_length__strlit_r_bool, can_length, bool ,  literal)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_string__String_String_int64_t_r_bool(bool * __result, union String * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union String * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(parse_string, rl_parse_string__String_String_int64_t_r_bool, String_parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_string__String_String_int64_t_r_bool(bool * __result, union String * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union String * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_string, rl_can_parse_string__String_String_int64_t_r_bool, can_String_parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_parse_string__bool_String_int64_t_r_bool(bool * __result, bool * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS bool * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(parse_string, rl_parse_string__bool_String_int64_t_r_bool, parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_parse_string__bool_String_int64_t_r_bool(bool * __result, bool * result, union String * buffer, int64_t * index);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS bool * result, union String * buffer, int64_t * index
+RLC_VISIT_FUNCTION(can_parse_string, rl_can_parse_string__bool_String_int64_t_r_bool, can_parse_string, bool ,  result,  buffer,  index)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__BIntT0T2T(union BIntT0T2T * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union BIntT0T2T * self
+RLC_VISIT_FUNCTION(init, rl_m_init__BIntT0T2T, BInt_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__BIntT0T2T_r_bool(bool * __result, union BIntT0T2T * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union BIntT0T2T * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__BIntT0T2T_r_bool, can_BInt_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__BIntT0T1T_int64_t(union BIntT0T1T * self, int64_t * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T1T * self, int64_t * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__BIntT0T1T_int64_t, BInt_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__BIntT0T1T_int64_t_r_bool(bool * __result, union BIntT0T1T * self, int64_t * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T1T * self, int64_t * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__BIntT0T1T_int64_t_r_bool, can_BInt_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_assign__BIntT0T2T_int64_t(union BIntT0T2T * self, int64_t * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, int64_t * other
+RLC_VISIT_FUNCTION(assign, rl_m_assign__BIntT0T2T_int64_t, BInt_assign, void ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_assign__BIntT0T2T_int64_t_r_bool(bool * __result, union BIntT0T2T * self, int64_t * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, int64_t * other
+RLC_VISIT_FUNCTION(can_assign, rl_m_can_assign__BIntT0T2T_int64_t_r_bool, can_BInt_assign, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_add__BIntT0T2T_int64_t_r_BIntT0T2T(union BIntT0T2T * __result, union BIntT0T2T * self, int64_t * val);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, int64_t * val
+RLC_VISIT_FUNCTION(add, rl_m_add__BIntT0T2T_int64_t_r_BIntT0T2T, BInt_add, union BIntT0T2T ,  self,  val)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_add__BIntT0T2T_int64_t_r_bool(bool * __result, union BIntT0T2T * self, int64_t * val);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, int64_t * val
+RLC_VISIT_FUNCTION(can_add, rl_m_can_add__BIntT0T2T_int64_t_r_bool, can_BInt_add, bool ,  self,  val)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_add__BIntT0T2T_BIntT0T2T_r_BIntT0T2T(union BIntT0T2T * __result, union BIntT0T2T * self, union BIntT0T2T * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, union BIntT0T2T * other
+RLC_VISIT_FUNCTION(add, rl_m_add__BIntT0T2T_BIntT0T2T_r_BIntT0T2T, BInt_add, union BIntT0T2T ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_add__BIntT0T2T_BIntT0T2T_r_bool(bool * __result, union BIntT0T2T * self, union BIntT0T2T * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union BIntT0T2T * self, union BIntT0T2T * other
+RLC_VISIT_FUNCTION(can_add, rl_m_can_add__BIntT0T2T_BIntT0T2T_r_bool, can_BInt_add, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_is_equal__CrossState_CrossState_r_bool(bool * __result, union CrossState * self, union CrossState * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState * self, union CrossState * other
+RLC_VISIT_FUNCTION(is_equal, rl_m_is_equal__CrossState_CrossState_r_bool, CrossState_is_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_is_equal__CrossState_CrossState_r_bool(bool * __result, union CrossState * self, union CrossState * other);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState * self, union CrossState * other
+RLC_VISIT_FUNCTION(can_is_equal, rl_m_can_is_equal__CrossState_CrossState_r_bool, can_CrossState_is_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_opposite_color__CrossState_r_CrossState(union CrossState * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(opposite_color, rl_m_opposite_color__CrossState_r_CrossState, CrossState_opposite_color, union CrossState ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_opposite_color__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(can_opposite_color, rl_m_can_opposite_color__CrossState_r_bool, can_CrossState_opposite_color, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_to_char__CrossState_r_int8_t(int8_t * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(to_char, rl_m_to_char__CrossState_r_int8_t, CrossState_to_char, int8_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_to_char__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(can_to_char, rl_m_can_to_char__CrossState_r_bool, can_CrossState_to_char, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_is_enum__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(is_enum, rl_is_enum__CrossState_r_bool, CrossState_is_enum, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_is_enum__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(can_is_enum, rl_can_is_enum__CrossState_r_bool, can_CrossState_is_enum, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_max__CrossState_r_int64_t(int64_t * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(max, rl_max__CrossState_r_int64_t, CrossState_max, int64_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_max__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(can_max, rl_can_max__CrossState_r_bool, can_CrossState_max, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_as_int__CrossState_r_int64_t(int64_t * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(as_int, rl_as_int__CrossState_r_int64_t, CrossState_as_int, int64_t ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_as_int__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(can_as_int, rl_can_as_int__CrossState_r_bool, can_CrossState_as_int, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_from_int__CrossState_int64_t(union CrossState * self, int64_t * new_value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState * self, int64_t * new_value
+RLC_VISIT_FUNCTION(from_int, rl_from_int__CrossState_int64_t, CrossState_from_int, void ,  self,  new_value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_from_int__CrossState_int64_t_r_bool(bool * __result, union CrossState * self, int64_t * new_value);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union CrossState * self, int64_t * new_value
+RLC_VISIT_FUNCTION(can_from_int, rl_can_from_int__CrossState_int64_t_r_bool, can_CrossState_from_int, bool ,  self,  new_value)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_as_string_literal__CrossState_r_strlit(char* * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(as_string_literal, rl_as_string_literal__CrossState_r_strlit, CrossState_as_string_literal, char* ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_as_string_literal__CrossState_r_bool(bool * __result, union CrossState * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union CrossState * self
+RLC_VISIT_FUNCTION(can_as_string_literal, rl_can_as_string_literal__CrossState_r_bool, can_CrossState_as_string_literal, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__Coords_int64_t_int64_t_r_Coords(union Coords * __result, union Coords * self, int64_t * x, int64_t * y);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union Coords * self, int64_t * x, int64_t * y
+RLC_VISIT_FUNCTION(init, rl_m_init__Coords_int64_t_int64_t_r_Coords, Coords_init, union Coords ,  self,  x,  y)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__Coords_int64_t_int64_t_r_bool(bool * __result, union Coords * self, int64_t * x, int64_t * y);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union Coords * self, int64_t * x, int64_t * y
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__Coords_int64_t_int64_t_r_bool, can_Coords_init, bool ,  self,  x,  y)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_init__Board(union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(init, rl_m_init__Board, Board_init, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_init__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_init, rl_m_can_init__Board_r_bool, can_Board_init, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_clone__Board_r_Board(union Board * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(clone, rl_m_clone__Board_r_Board, Board_clone, union Board ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_clone__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_clone, rl_m_can_clone__Board_r_bool, can_Board_clone, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get_cross__Board_Coords_r_CrossState(union CrossState * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(get_cross, rl_m_get_cross__Board_Coords_r_CrossState, Board_get_cross, union CrossState ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get_cross__Board_Coords_r_bool(bool * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(can_get_cross, rl_m_can_get_cross__Board_Coords_r_bool, can_Board_get_cross, bool ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_set_cross__Board_Coords_CrossState(union Board * self, union Coords * coords, union CrossState * stone);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union Board * self, union Coords * coords, union CrossState * stone
+RLC_VISIT_FUNCTION(set_cross, rl_m_set_cross__Board_Coords_CrossState, Board_set_cross, void ,  self,  coords,  stone)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_set_cross__Board_Coords_CrossState_r_bool(bool * __result, union Board * self, union Coords * coords, union CrossState * stone);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 3
+#define RLC_ARGUMENTS union Board * self, union Coords * coords, union CrossState * stone
+RLC_VISIT_FUNCTION(can_set_cross, rl_m_can_set_cross__Board_Coords_CrossState_r_bool, can_Board_set_cross, bool ,  self,  coords,  stone)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_find_neighbors__Board_Coords_r_VectorTCoordsT(union VectorTCoordsT * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(find_neighbors, rl_m_find_neighbors__Board_Coords_r_VectorTCoordsT, Board_find_neighbors, union VectorTCoordsT ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_find_neighbors__Board_Coords_r_bool(bool * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(can_find_neighbors, rl_m_can_find_neighbors__Board_Coords_r_bool, can_Board_find_neighbors, bool ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_find_group__Board_Coords_CrossState_bool_19_19_VectorTCoordsT(union Board * self, union Coords * coords, union CrossState * color, bool * visited[19][19], union VectorTCoordsT * group);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 5
+#define RLC_ARGUMENTS union Board * self, union Coords * coords, union CrossState * color, bool *[19][19] visited, union VectorTCoordsT * group
+RLC_VISIT_FUNCTION(find_group, rl_m_find_group__Board_Coords_CrossState_bool_19_19_VectorTCoordsT, Board_find_group, void ,  self,  coords,  color,  visited,  group)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_find_group__Board_Coords_CrossState_bool_19_19_VectorTCoordsT_r_bool(bool * __result, union Board * self, union Coords * coords, union CrossState * color, bool * visited[19][19], union VectorTCoordsT * group);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 5
+#define RLC_ARGUMENTS union Board * self, union Coords * coords, union CrossState * color, bool *[19][19] visited, union VectorTCoordsT * group
+RLC_VISIT_FUNCTION(can_find_group, rl_m_can_find_group__Board_Coords_CrossState_bool_19_19_VectorTCoordsT_r_bool, can_Board_find_group, bool ,  self,  coords,  color,  visited,  group)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get_group__Board_Coords_r_VectorTCoordsT(union VectorTCoordsT * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(get_group, rl_m_get_group__Board_Coords_r_VectorTCoordsT, Board_get_group, union VectorTCoordsT ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get_group__Board_Coords_r_bool(bool * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(can_get_group, rl_m_can_get_group__Board_Coords_r_bool, can_Board_get_group, bool ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_count_liberties__Board_VectorTCoordsT_r_int64_t(int64_t * __result, union Board * self, union VectorTCoordsT * group);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union VectorTCoordsT * group
+RLC_VISIT_FUNCTION(count_liberties, rl_m_count_liberties__Board_VectorTCoordsT_r_int64_t, Board_count_liberties, int64_t ,  self,  group)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_count_liberties__Board_VectorTCoordsT_r_bool(bool * __result, union Board * self, union VectorTCoordsT * group);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union VectorTCoordsT * group
+RLC_VISIT_FUNCTION(can_count_liberties, rl_m_can_count_liberties__Board_VectorTCoordsT_r_bool, can_Board_count_liberties, bool ,  self,  group)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_remove_group__Board_VectorTCoordsT(union Board * self, union VectorTCoordsT * group);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union VectorTCoordsT * group
+RLC_VISIT_FUNCTION(remove_group, rl_m_remove_group__Board_VectorTCoordsT, Board_remove_group, void ,  self,  group)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_remove_group__Board_VectorTCoordsT_r_bool(bool * __result, union Board * self, union VectorTCoordsT * group);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union VectorTCoordsT * group
+RLC_VISIT_FUNCTION(can_remove_group, rl_m_can_remove_group__Board_VectorTCoordsT_r_bool, can_Board_remove_group, bool ,  self,  group)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_capture_group__Board_Coords(union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(capture_group, rl_m_capture_group__Board_Coords, Board_capture_group, void ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_capture_group__Board_Coords_r_bool(bool * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(can_capture_group, rl_m_can_capture_group__Board_Coords_r_bool, can_Board_capture_group, bool ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_try_move__Board_Coords_r_bool(bool * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(try_move, rl_m_try_move__Board_Coords_r_bool, Board_try_move, bool ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_try_move__Board_Coords_r_bool(bool * __result, union Board * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union Coords * coords
+RLC_VISIT_FUNCTION(can_try_move, rl_m_can_try_move__Board_Coords_r_bool, can_Board_try_move, bool ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_is_grid_equal__Board_CrossState_19_19_r_bool(bool * __result, union Board * self, union CrossState * other[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union CrossState *[19][19] other
+RLC_VISIT_FUNCTION(is_grid_equal, rl_m_is_grid_equal__Board_CrossState_19_19_r_bool, Board_is_grid_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_is_grid_equal__Board_CrossState_19_19_r_bool(bool * __result, union Board * self, union CrossState * other[19][19]);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union CrossState *[19][19] other
+RLC_VISIT_FUNCTION(can_is_grid_equal, rl_m_can_is_grid_equal__Board_CrossState_19_19_r_bool, can_Board_is_grid_equal, bool ,  self,  other)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_player_to_stone__Board_BIntT0T1T_r_CrossState(union CrossState * __result, union Board * self, union BIntT0T1T * player);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union BIntT0T1T * player
+RLC_VISIT_FUNCTION(player_to_stone, rl_m_player_to_stone__Board_BIntT0T1T_r_CrossState, Board_player_to_stone, union CrossState ,  self,  player)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_player_to_stone__Board_BIntT0T1T_r_bool(bool * __result, union Board * self, union BIntT0T1T * player);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Board * self, union BIntT0T1T * player
+RLC_VISIT_FUNCTION(can_player_to_stone, rl_m_can_player_to_stone__Board_BIntT0T1T_r_bool, can_Board_player_to_stone, bool ,  self,  player)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_to_string__Board_r_String(union String * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(to_string, rl_m_to_string__Board_r_String, Board_to_string, union String ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_to_string__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_to_string, rl_m_can_to_string__Board_r_bool, can_Board_to_string, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_turn_passed__Board(union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(turn_passed, rl_m_turn_passed__Board, Board_turn_passed, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_turn_passed__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_turn_passed, rl_m_can_turn_passed__Board_r_bool, can_Board_turn_passed, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_reset_pass_counter__Board(union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(reset_pass_counter, rl_m_reset_pass_counter__Board, Board_reset_pass_counter, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_reset_pass_counter__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_reset_pass_counter, rl_m_can_reset_pass_counter__Board_r_bool, can_Board_reset_pass_counter, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_next_player__Board(union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(next_player, rl_m_next_player__Board, Board_next_player, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_next_player__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_next_player, rl_m_can_next_player__Board_r_bool, can_Board_next_player, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_collect_territories__Board_Coords_bool_19_19_Territory(union Board * self, union Coords * coords, bool * visited[19][19], union Territory * terr);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS union Board * self, union Coords * coords, bool *[19][19] visited, union Territory * terr
+RLC_VISIT_FUNCTION(collect_territories, rl_m_collect_territories__Board_Coords_bool_19_19_Territory, Board_collect_territories, void ,  self,  coords,  visited,  terr)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_collect_territories__Board_Coords_bool_19_19_Territory_r_bool(bool * __result, union Board * self, union Coords * coords, bool * visited[19][19], union Territory * terr);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 4
+#define RLC_ARGUMENTS union Board * self, union Coords * coords, bool *[19][19] visited, union Territory * terr
+RLC_VISIT_FUNCTION(can_collect_territories, rl_m_can_collect_territories__Board_Coords_bool_19_19_Territory_r_bool, can_Board_collect_territories, bool ,  self,  coords,  visited,  terr)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_count_territories__Board_r_Scores(union Scores * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(count_territories, rl_m_count_territories__Board_r_Scores, Board_count_territories, union Scores ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_count_territories__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_count_territories, rl_m_can_count_territories__Board_r_bool, can_Board_count_territories, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_get_winner__Board_r_CrossState(union CrossState * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(get_winner, rl_m_get_winner__Board_r_CrossState, Board_get_winner, union CrossState ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_get_winner__Board_r_bool(bool * __result, union Board * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Board * self
+RLC_VISIT_FUNCTION(can_get_winner, rl_m_can_get_winner__Board_r_bool, can_Board_get_winner, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_apply__GamePassTurn_Game(union GamePassTurn * self, union Game * frame);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePassTurn * self, union Game * frame
+RLC_VISIT_FUNCTION(apply, rl_apply__GamePassTurn_Game, GamePassTurn_apply, void ,  self,  frame)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_apply__GamePassTurn_Game_r_bool(bool * __result, union GamePassTurn * self, union Game * frame);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePassTurn * self, union Game * frame
+RLC_VISIT_FUNCTION(can_apply, rl_can_apply__GamePassTurn_Game_r_bool, can_GamePassTurn_apply, bool ,  self,  frame)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_get_type_name__GamePassTurn_r_strlit(char* * __result, union GamePassTurn * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePassTurn * self
+RLC_VISIT_FUNCTION(get_type_name, rl_get_type_name__GamePassTurn_r_strlit, GamePassTurn_get_type_name, char* ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_get_type_name__GamePassTurn_r_bool(bool * __result, union GamePassTurn * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePassTurn * self
+RLC_VISIT_FUNCTION(can_get_type_name, rl_can_get_type_name__GamePassTurn_r_bool, can_GamePassTurn_get_type_name, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_apply__GamePlaceStone_Game(union GamePlaceStone * self, union Game * frame);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePlaceStone * self, union Game * frame
+RLC_VISIT_FUNCTION(apply, rl_apply__GamePlaceStone_Game, GamePlaceStone_apply, void ,  self,  frame)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_apply__GamePlaceStone_Game_r_bool(bool * __result, union GamePlaceStone * self, union Game * frame);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union GamePlaceStone * self, union Game * frame
+RLC_VISIT_FUNCTION(can_apply, rl_can_apply__GamePlaceStone_Game_r_bool, can_GamePlaceStone_apply, bool ,  self,  frame)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_get_type_name__GamePlaceStone_r_strlit(char* * __result, union GamePlaceStone * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePlaceStone * self
+RLC_VISIT_FUNCTION(get_type_name, rl_get_type_name__GamePlaceStone_r_strlit, GamePlaceStone_get_type_name, char* ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_get_type_name__GamePlaceStone_r_bool(bool * __result, union GamePlaceStone * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union GamePlaceStone * self
+RLC_VISIT_FUNCTION(can_get_type_name, rl_can_get_type_name__GamePlaceStone_r_bool, can_GamePlaceStone_get_type_name, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_apply__AnyGameAction_Game(struct AnyGameAction * self, union Game * frame);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, union Game * frame
+RLC_VISIT_FUNCTION(apply, rl_apply__AnyGameAction_Game, apply, void ,  self,  frame)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_apply__AnyGameAction_Game_r_bool(bool * __result, struct AnyGameAction * self, union Game * frame);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS struct AnyGameAction * self, union Game * frame
+RLC_VISIT_FUNCTION(can_apply, rl_can_apply__AnyGameAction_Game_r_bool, can_apply, bool ,  self,  frame)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_pretty_print__Game(union Game * game);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * game
+RLC_VISIT_FUNCTION(pretty_print, rl_pretty_print__Game, Game_pretty_print, void ,  game)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_pretty_print__Game_r_bool(bool * __result, union Game * game);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * game
+RLC_VISIT_FUNCTION(can_pretty_print, rl_can_pretty_print__Game_r_bool, can_Game_pretty_print, bool ,  game)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_get_current_player__Game_r_int64_t(int64_t * __result, union Game * g);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * g
+RLC_VISIT_FUNCTION(get_current_player, rl_get_current_player__Game_r_int64_t, Game_get_current_player, int64_t ,  g)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_get_current_player__Game_r_bool(bool * __result, union Game * g);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * g
+RLC_VISIT_FUNCTION(can_get_current_player, rl_can_get_current_player__Game_r_bool, can_Game_get_current_player, bool ,  g)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_score__Game_int64_t_r_double(double * __result, union Game * g, int64_t * player_id);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Game * g, int64_t * player_id
+RLC_VISIT_FUNCTION(score, rl_score__Game_int64_t_r_double, Game_score, double ,  g,  player_id)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_score__Game_int64_t_r_bool(bool * __result, union Game * g, int64_t * player_id);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Game * g, int64_t * player_id
+RLC_VISIT_FUNCTION(can_score, rl_can_score__Game_int64_t_r_bool, can_Game_score, bool ,  g,  player_id)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_get_num_players__r_int64_t(int64_t * __result);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 0
+#define RLC_ARGUMENTS 
+RLC_VISIT_FUNCTION(get_num_players, rl_get_num_players__r_int64_t, get_num_players, int64_t , )
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_get_num_players__r_bool(bool * __result);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 0
+#define RLC_ARGUMENTS 
+RLC_VISIT_FUNCTION(can_get_num_players, rl_can_get_num_players__r_bool, can_get_num_players, bool , )
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_fuzz__VectorTint8_tT(union VectorTint8_tT * input);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * input
+RLC_VISIT_FUNCTION(fuzz, rl_fuzz__VectorTint8_tT, Vector_fuzz, void ,  input)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_fuzz__VectorTint8_tT_r_bool(bool * __result, union VectorTint8_tT * input);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union VectorTint8_tT * input
+RLC_VISIT_FUNCTION(can_fuzz, rl_can_fuzz__VectorTint8_tT_r_bool, can_Vector_fuzz, bool ,  input)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_play__r_Game(union Game * __result);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 0
+#define RLC_ARGUMENTS 
+RLC_VISIT_FUNCTION(play, rl_play__r_Game, Game_play, union Game , )
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_can_play__r_bool(bool * __result);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 0
+#define RLC_ARGUMENTS 
+RLC_VISIT_FUNCTION(can_play, rl_can_play__r_bool, can_Game_play, bool , )
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_pass_turn__Game(union Game * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * self
+RLC_VISIT_FUNCTION(pass_turn, rl_m_pass_turn__Game, Game_pass_turn, void ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_pass_turn__Game_r_bool(bool * __result, union Game * self);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * self
+RLC_VISIT_FUNCTION(can_pass_turn, rl_m_can_pass_turn__Game_r_bool, can_Game_pass_turn, bool ,  self)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_place_stone__Game_Coords(union Game * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Game * self, union Coords * coords
+RLC_VISIT_FUNCTION(place_stone, rl_m_place_stone__Game_Coords, Game_place_stone, void ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_place_stone__Game_Coords_r_bool(bool * __result, union Game * self, union Coords * coords);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 2
+#define RLC_ARGUMENTS union Game * self, union Coords * coords
+RLC_VISIT_FUNCTION(can_place_stone, rl_m_can_place_stone__Game_Coords_r_bool, can_Game_place_stone, bool ,  self,  coords)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_is_done__Game_r_bool(bool * __result, union Game * arg0);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * arg0
+RLC_VISIT_FUNCTION(is_done, rl_m_is_done__Game_r_bool, Game_is_done, bool ,  arg0)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+void rl_m_can_is_done__Game_r_bool(bool * __result, union Game * arg0);
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#define RLC_ARGUMENTS_COUNT 1
+#define RLC_ARGUMENTS union Game * arg0
+RLC_VISIT_FUNCTION(can_is_done, rl_m_can_is_done__Game_r_bool, can_Game_is_done, bool ,  arg0)
+#undef RLC_ARGUMENTS_COUNT
+#undef RLC_ARGUMENTS
+#endif
+
+#ifdef RLC_GET_FUNCTION_DECLS
+#undef RLC_GET_FUNCTION_DECLS
+#endif
+
+#ifdef RLC_VISIT_FUNCTION
+#undef RLC_VISIT_FUNCTION
+#endif
+#ifdef RLC_GET_TYPE_DEFS
+typedef union VectorTboolT {
+struct _ContentVectorTboolT {
+    bool* _data;
+    int64_t _size;
+    int64_t _capacity;
+  } content;
+#ifdef __cplusplus
+void append(bool(& value));
+VectorTboolT& operator=(union VectorTboolT(& other));
+~VectorTboolT();
+VectorTboolT();
+bool* get(int64_t(& index));
+VectorTboolT(const VectorTboolT& other) : VectorTboolT() {*this = const_cast<VectorTboolT&>(other);}
+VectorTboolT(VectorTboolT&& other) = delete;
+VectorTboolT& operator=(VectorTboolT&& other) = delete;
+#endif
+} VectorTboolT;
+typedef union VectorTdoubleT {
+struct _ContentVectorTdoubleT {
+    double* _data;
+    int64_t _size;
+    int64_t _capacity;
+  } content;
+#ifdef __cplusplus
+double* get(int64_t(& index));
+~VectorTdoubleT();
+void resize(int64_t(& new_size));
+double pop();
+int64_t size();
+VectorTdoubleT();
+void append(double(& value));
+VectorTdoubleT& operator=(union VectorTdoubleT(& other));
+VectorTdoubleT(const VectorTdoubleT& other) : VectorTdoubleT() {*this = const_cast<VectorTdoubleT&>(other);}
+VectorTdoubleT(VectorTdoubleT&& other) = delete;
+VectorTdoubleT& operator=(VectorTdoubleT&& other) = delete;
+#endif
+} VectorTdoubleT;
+typedef union Coords {
+struct _ContentCoords {
+    int64_t x;
+    int64_t y;
+  } content;
+#ifdef __cplusplus
+Coords(int64_t(& x), int64_t(& y));
+Coords();
+Coords& operator=(union Coords(& other));
+Coords(const Coords& other) : Coords() {*this = const_cast<Coords&>(other);}
+Coords(Coords&& other) = delete;
+Coords& operator=(Coords&& other) = delete;
+~Coords() {}
+#endif
+} Coords;
+typedef union VectorTCoordsT {
+struct _ContentVectorTCoordsT {
+    union Coords* _data;
+    int64_t _size;
+    int64_t _capacity;
+  } content;
+#ifdef __cplusplus
+int64_t size();
+void append(union Coords(& value));
+~VectorTCoordsT();
+union Coords* back();
+VectorTCoordsT& operator=(union VectorTCoordsT(& other));
+VectorTCoordsT();
+union Coords* get(int64_t(& index));
+VectorTCoordsT(const VectorTCoordsT& other) : VectorTCoordsT() {*this = const_cast<VectorTCoordsT&>(other);}
+VectorTCoordsT(VectorTCoordsT&& other) = delete;
+VectorTCoordsT& operator=(VectorTCoordsT&& other) = delete;
+#endif
+} VectorTCoordsT;
+typedef union VectorTint8_tT {
+struct _ContentVectorTint8_tT {
+    int8_t* _data;
+    int64_t _size;
+    int64_t _capacity;
+  } content;
+#ifdef __cplusplus
+int8_t pop();
+int8_t* get(int64_t(& index));
+VectorTint8_tT& operator=(union VectorTint8_tT(& other));
+void drop_back(int64_t(& quantity));
+VectorTint8_tT();
+~VectorTint8_tT();
+int64_t size();
+int8_t* back();
+void append(int8_t(& value));
+VectorTint8_tT(const VectorTint8_tT& other) : VectorTint8_tT() {*this = const_cast<VectorTint8_tT&>(other);}
+VectorTint8_tT(VectorTint8_tT&& other) = delete;
+VectorTint8_tT& operator=(VectorTint8_tT&& other) = delete;
+#endif
+} VectorTint8_tT;
+typedef union String {
+struct _ContentString {
+    union VectorTint8_tT _data;
+  } content;
+#ifdef __cplusplus
+void append_quoted(union String(& str));
+int8_t* back();
+union String add(union String(& other));
+void append(int8_t(& b));
+void append(char*(& str));
+int8_t* get(int64_t(& index));
+int64_t size();
+bool not_equal(union String(& other));
+bool operator==(char*(& other));
+bool not_equal(char*(& other));
+bool substring_matches(char*(& lit), int64_t(& pos));
+void reverse();
+union String to_indented_lines();
+String& operator=(union String(& other));
+String();
+bool operator==(union String(& other));
+void drop_back(int64_t(& quantity));
+~String();
+void append(union String(& str));
+int64_t count(int8_t(& b));
+String(const String& other) : String() {*this = const_cast<String&>(other);}
+String(String&& other) = delete;
+String& operator=(String&& other) = delete;
+#endif
+} String;
+typedef union VectorTStringT {
+struct _ContentVectorTStringT {
+    union String* _data;
+    int64_t _size;
+    int64_t _capacity;
+  } content;
+#ifdef __cplusplus
+~VectorTStringT();
+union String pop();
+VectorTStringT();
+void append(union String(& value));
+int64_t size();
+VectorTStringT& operator=(union VectorTStringT(& other));
+union String* get(int64_t(& index));
+VectorTStringT(const VectorTStringT& other) : VectorTStringT() {*this = const_cast<VectorTStringT&>(other);}
+VectorTStringT(VectorTStringT&& other) = delete;
+VectorTStringT& operator=(VectorTStringT&& other) = delete;
+#endif
+} VectorTStringT;
+typedef union BIntT0T1T {
+struct _ContentBIntT0T1T {
+    int64_t value;
+  } content;
+#ifdef __cplusplus
+void operator=(int64_t(& other));
+BIntT0T1T();
+BIntT0T1T& operator=(union BIntT0T1T(& other));
+BIntT0T1T(const BIntT0T1T& other) : BIntT0T1T() {*this = const_cast<BIntT0T1T&>(other);}
+BIntT0T1T(BIntT0T1T&& other) = delete;
+BIntT0T1T& operator=(BIntT0T1T&& other) = delete;
+~BIntT0T1T() {}
+#endif
+} BIntT0T1T;
+typedef union BIntT0T2T {
+struct _ContentBIntT0T2T {
+    int64_t value;
+  } content;
+#ifdef __cplusplus
+BIntT0T2T& operator=(union BIntT0T2T(& other));
+BIntT0T2T();
+void operator=(int64_t(& other));
+union BIntT0T2T add(int64_t(& val));
+union BIntT0T2T add(union BIntT0T2T(& other));
+BIntT0T2T(const BIntT0T2T& other) : BIntT0T2T() {*this = const_cast<BIntT0T2T&>(other);}
+BIntT0T2T(BIntT0T2T&& other) = delete;
+BIntT0T2T& operator=(BIntT0T2T&& other) = delete;
+~BIntT0T2T() {}
+#endif
+} BIntT0T2T;
+typedef union CrossState {
+struct _ContentCrossState {
+    int64_t value;
+  } content;
+#ifdef __cplusplus
+int8_t to_char();
+CrossState();
+CrossState& operator=(union CrossState(& other));
+bool is_equal(union CrossState(& other));
+union CrossState opposite_color();
+CrossState(const CrossState& other) : CrossState() {*this = const_cast<CrossState&>(other);}
+CrossState(CrossState&& other) = delete;
+CrossState& operator=(CrossState&& other) = delete;
+~CrossState() {}
+#endif
+} CrossState;
+typedef union Territory {
+struct _ContentTerritory {
+    union VectorTCoordsT coords;
+    bool has_black_border;
+    bool has_white_border;
+  } content;
+#ifdef __cplusplus
+Territory& operator=(union Territory(& other));
+~Territory();
+Territory();
+Territory(const Territory& other) : Territory() {*this = const_cast<Territory&>(other);}
+Territory(Territory&& other) = delete;
+Territory& operator=(Territory&& other) = delete;
+#endif
+} Territory;
+typedef union Scores {
+struct _ContentScores {
+    int64_t black_score;
+    int64_t white_score;
+  } content;
+#ifdef __cplusplus
+Scores& operator=(union Scores(& other));
+Scores();
+Scores(const Scores& other) : Scores() {*this = const_cast<Scores&>(other);}
+Scores(Scores&& other) = delete;
+Scores& operator=(Scores&& other) = delete;
+~Scores() {}
+#endif
+} Scores;
+typedef union Board {
+struct _ContentBoard {
+    union CrossState grid[19][19];
+    union CrossState prev_grid_state[19][19];
+    union BIntT0T1T curr_player;
+    union BIntT0T2T pass_count;
+    int64_t black_stones;
+    int64_t white_stones;
+  } content;
+#ifdef __cplusplus
+union CrossState get_cross(union Coords(& coords));
+bool is_grid_equal(union CrossState(& other)[19][19]);
+union Board clone();
+void find_group(union Coords(& coords), union CrossState(& color), bool(& visited)[19][19], union VectorTCoordsT(& group));
+void collect_territories(union Coords(& coords), bool(& visited)[19][19], union Territory(& terr));
+union CrossState player_to_stone(union BIntT0T1T(& player));
+void set_cross(union Coords(& coords), union CrossState(& stone));
+union CrossState get_winner();
+bool try_move(union Coords(& coords));
+Board& operator=(union Board(& other));
+void next_player();
+void capture_group(union Coords(& coords));
+union VectorTCoordsT get_group(union Coords(& coords));
+int64_t count_liberties(union VectorTCoordsT(& group));
+union String to_string();
+void remove_group(union VectorTCoordsT(& group));
+Board();
+void reset_pass_counter();
+void turn_passed();
+union Scores count_territories();
+union VectorTCoordsT find_neighbors(union Coords(& coords));
+Board(const Board& other) : Board() {*this = const_cast<Board&>(other);}
+Board(Board&& other) = delete;
+Board& operator=(Board&& other) = delete;
+~Board() {}
+#endif
+} Board;
+typedef union GamePassTurn {
+struct _ContentGamePassTurn {
+  } content;
+#ifdef __cplusplus
+GamePassTurn();
+GamePassTurn& operator=(union GamePassTurn(& other));
+GamePassTurn(const GamePassTurn& other) : GamePassTurn() {*this = const_cast<GamePassTurn&>(other);}
+GamePassTurn(GamePassTurn&& other) = delete;
+GamePassTurn& operator=(GamePassTurn&& other) = delete;
+~GamePassTurn() {}
+#endif
+} GamePassTurn;
+typedef union GamePlaceStone {
+struct _ContentGamePlaceStone {
+    union Coords coords;
+  } content;
+#ifdef __cplusplus
+GamePlaceStone();
+GamePlaceStone& operator=(union GamePlaceStone(& other));
+GamePlaceStone(const GamePlaceStone& other) : GamePlaceStone() {*this = const_cast<GamePlaceStone&>(other);}
+GamePlaceStone(GamePlaceStone&& other) = delete;
+GamePlaceStone& operator=(GamePlaceStone&& other) = delete;
+~GamePlaceStone() {}
+#endif
+} GamePlaceStone;
+typedef union Game {
+struct _ContentGame {
+    int64_t resume_index;
+    union Board board;
+    union CrossState winner;
+  } content;
+#ifdef __cplusplus
+bool is_done();
+void pass_turn();
+bool can_pass_turn();
+void place_stone(union Coords(& coords));
+bool can_place_stone(union Coords(& coords));
+Game& operator=(union Game(& other));
+Game();
+Game(const Game& other) : Game() {*this = const_cast<Game&>(other);}
+Game(Game&& other) = delete;
+Game& operator=(Game&& other) = delete;
+~Game() {}
+#endif
+} Game;
+struct AnyGameAction {
+  union _ContentAnyGameAction{
+    #ifdef __cplusplus
+_ContentAnyGameAction() {};
+~_ContentAnyGameAction() {};
+#endif
+    union GamePassTurn field0;
+    union GamePlaceStone field1;
+  } content;
+  int64_t active_index;
+#ifdef __cplusplus
+void operator=(union GamePassTurn(& other));
+void operator=(union GamePlaceStone(& other));
+AnyGameAction& operator=(struct AnyGameAction(& other));
+AnyGameAction();
+AnyGameAction(const AnyGameAction& other) : AnyGameAction() {*this = const_cast<AnyGameAction&>(other);}
+AnyGameAction(AnyGameAction&& other) = delete;
+AnyGameAction& operator=(AnyGameAction&& other) = delete;
+~AnyGameAction() {}
+#endif
+};
+#ifdef __cplusplus
+}
+#endif
+#ifdef __cplusplus
+inline bool Game::is_done() {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_is_done__Game_r_bool(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline void Game::pass_turn() {
+ rl_m_pass_turn__Game(this);
+}
+inline bool Game::can_pass_turn() {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_can_pass_turn__Game_r_bool(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline void Game::place_stone(union Coords(& coords)) {
+ rl_m_place_stone__Game_Coords(this, &coords);
+}
+inline bool Game::can_place_stone(union Coords(& coords)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_can_place_stone__Game_Coords_r_bool(&_rl__result.payload, this, &coords);
+ return _rl__result.payload;
+}
+inline Game& Game::operator=(union Game(& other)) {
+ rl_m_assign__Game_Game(this, &other);
+return *this;
+}
+inline Game::Game() {
+ rl_m_init__Game(this);
+}
+inline Territory& Territory::operator=(union Territory(& other)) {
+ rl_m_assign__Territory_Territory(this, &other);
+return *this;
+}
+inline Territory::~Territory() {
+ rl_m_drop__Territory(this);
+}
+inline Territory::Territory() {
+ rl_m_init__Territory(this);
+}
+inline union CrossState Board::get_cross(union Coords(& coords)) {
+ union ToReturn { union CrossState payload; ToReturn() {}; ~ToReturn() { payload.~CrossState(); } }	_rl__result;
+ rl_m_get_cross__Board_Coords_r_CrossState(&_rl__result.payload, this, &coords);
+ return _rl__result.payload;
+}
+inline bool Board::is_grid_equal(union CrossState(& other)[19][19]) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_is_grid_equal__Board_CrossState_19_19_r_bool(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline union Board Board::clone() {
+ union ToReturn { union Board payload; ToReturn() {}; ~ToReturn() { payload.~Board(); } }	_rl__result;
+ rl_m_clone__Board_r_Board(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline void Board::find_group(union Coords(& coords), union CrossState(& color), bool(& visited)[19][19], union VectorTCoordsT(& group)) {
+ rl_m_find_group__Board_Coords_CrossState_bool_19_19_VectorTCoordsT(this, &coords, &color, &visited, &group);
+}
+inline void Board::collect_territories(union Coords(& coords), bool(& visited)[19][19], union Territory(& terr)) {
+ rl_m_collect_territories__Board_Coords_bool_19_19_Territory(this, &coords, &visited, &terr);
+}
+inline union CrossState Board::player_to_stone(union BIntT0T1T(& player)) {
+ union ToReturn { union CrossState payload; ToReturn() {}; ~ToReturn() { payload.~CrossState(); } }	_rl__result;
+ rl_m_player_to_stone__Board_BIntT0T1T_r_CrossState(&_rl__result.payload, this, &player);
+ return _rl__result.payload;
+}
+inline void Board::set_cross(union Coords(& coords), union CrossState(& stone)) {
+ rl_m_set_cross__Board_Coords_CrossState(this, &coords, &stone);
+}
+inline union CrossState Board::get_winner() {
+ union ToReturn { union CrossState payload; ToReturn() {}; ~ToReturn() { payload.~CrossState(); } }	_rl__result;
+ rl_m_get_winner__Board_r_CrossState(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline bool Board::try_move(union Coords(& coords)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_try_move__Board_Coords_r_bool(&_rl__result.payload, this, &coords);
+ return _rl__result.payload;
+}
+inline Board& Board::operator=(union Board(& other)) {
+ rl_m_assign__Board_Board(this, &other);
+return *this;
+}
+inline void Board::next_player() {
+ rl_m_next_player__Board(this);
+}
+inline void Board::capture_group(union Coords(& coords)) {
+ rl_m_capture_group__Board_Coords(this, &coords);
+}
+inline union VectorTCoordsT Board::get_group(union Coords(& coords)) {
+ union ToReturn { union VectorTCoordsT payload; ToReturn() {}; ~ToReturn() { payload.~VectorTCoordsT(); } }	_rl__result;
+ rl_m_get_group__Board_Coords_r_VectorTCoordsT(&_rl__result.payload, this, &coords);
+ return _rl__result.payload;
+}
+inline int64_t Board::count_liberties(union VectorTCoordsT(& group)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_count_liberties__Board_VectorTCoordsT_r_int64_t(&_rl__result.payload, this, &group);
+ return _rl__result.payload;
+}
+inline union String Board::to_string() {
+ union ToReturn { union String payload; ToReturn() {}; ~ToReturn() { payload.~String(); } }	_rl__result;
+ rl_m_to_string__Board_r_String(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline void Board::remove_group(union VectorTCoordsT(& group)) {
+ rl_m_remove_group__Board_VectorTCoordsT(this, &group);
+}
+inline Board::Board() {
+ rl_m_init__Board(this);
+}
+inline void Board::reset_pass_counter() {
+ rl_m_reset_pass_counter__Board(this);
+}
+inline void Board::turn_passed() {
+ rl_m_turn_passed__Board(this);
+}
+inline union Scores Board::count_territories() {
+ union ToReturn { union Scores payload; ToReturn() {}; ~ToReturn() { payload.~Scores(); } }	_rl__result;
+ rl_m_count_territories__Board_r_Scores(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline union VectorTCoordsT Board::find_neighbors(union Coords(& coords)) {
+ union ToReturn { union VectorTCoordsT payload; ToReturn() {}; ~ToReturn() { payload.~VectorTCoordsT(); } }	_rl__result;
+ rl_m_find_neighbors__Board_Coords_r_VectorTCoordsT(&_rl__result.payload, this, &coords);
+ return _rl__result.payload;
+}
+inline void String::append_quoted(union String(& str)) {
+ rl_m_append_quoted__String_String(this, &str);
+}
+inline int8_t* String::back() {
+ union ToReturn { int8_t* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_back__String_r_int8_tRef(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline union String String::add(union String(& other)) {
+ union ToReturn { union String payload; ToReturn() {}; ~ToReturn() { payload.~String(); } }	_rl__result;
+ rl_m_add__String_String_r_String(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline void String::append(int8_t(& b)) {
+ rl_m_append__String_int8_t(this, &b);
+}
+inline void String::append(char*(& str)) {
+ rl_m_append__String_strlit(this, &str);
+}
+inline int8_t* String::get(int64_t(& index)) {
+ union ToReturn { int8_t* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_get__String_int64_t_r_int8_tRef(&_rl__result.payload, this, &index);
+ return _rl__result.payload;
+}
+inline int64_t String::size() {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_size__String_r_int64_t(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline bool String::not_equal(union String(& other)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_not_equal__String_String_r_bool(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline bool String::operator==(char*(& other)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_equal__String_strlit_r_bool(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline bool String::not_equal(char*(& other)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_not_equal__String_strlit_r_bool(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline bool String::substring_matches(char*(& lit), int64_t(& pos)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_substring_matches__String_strlit_int64_t_r_bool(&_rl__result.payload, this, &lit, &pos);
+ return _rl__result.payload;
+}
+inline void String::reverse() {
+ rl_m_reverse__String(this);
+}
+inline union String String::to_indented_lines() {
+ union ToReturn { union String payload; ToReturn() {}; ~ToReturn() { payload.~String(); } }	_rl__result;
+ rl_m_to_indented_lines__String_r_String(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline String& String::operator=(union String(& other)) {
+ rl_m_assign__String_String(this, &other);
+return *this;
+}
+inline String::String() {
+ rl_m_init__String(this);
+}
+inline bool String::operator==(union String(& other)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_equal__String_String_r_bool(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline void String::drop_back(int64_t(& quantity)) {
+ rl_m_drop_back__String_int64_t(this, &quantity);
+}
+inline String::~String() {
+ rl_m_drop__String(this);
+}
+inline void String::append(union String(& str)) {
+ rl_m_append__String_String(this, &str);
+}
+inline int64_t String::count(int8_t(& b)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_count__String_int8_t_r_int64_t(&_rl__result.payload, this, &b);
+ return _rl__result.payload;
+}
+inline int64_t VectorTCoordsT::size() {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_size__VectorTCoordsT_r_int64_t(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline void VectorTCoordsT::append(union Coords(& value)) {
+ rl_m_append__VectorTCoordsT_Coords(this, &value);
+}
+inline VectorTCoordsT::~VectorTCoordsT() {
+ rl_m_drop__VectorTCoordsT(this);
+}
+inline union Coords* VectorTCoordsT::back() {
+ union ToReturn { union Coords* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_back__VectorTCoordsT_r_CoordsRef(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline VectorTCoordsT& VectorTCoordsT::operator=(union VectorTCoordsT(& other)) {
+ rl_m_assign__VectorTCoordsT_VectorTCoordsT(this, &other);
+return *this;
+}
+inline VectorTCoordsT::VectorTCoordsT() {
+ rl_m_init__VectorTCoordsT(this);
+}
+inline union Coords* VectorTCoordsT::get(int64_t(& index)) {
+ union ToReturn { union Coords* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_get__VectorTCoordsT_int64_t_r_CoordsRef(&_rl__result.payload, this, &index);
+ return _rl__result.payload;
+}
+inline void BIntT0T1T::operator=(int64_t(& other)) {
+ rl_m_assign__BIntT0T1T_int64_t(this, &other);
+}
+inline BIntT0T1T::BIntT0T1T() {
+ rl_m_init__BIntT0T1T(this);
+}
+inline BIntT0T1T& BIntT0T1T::operator=(union BIntT0T1T(& other)) {
+ rl_m_assign__BIntT0T1T_BIntT0T1T(this, &other);
+return *this;
+}
+inline BIntT0T2T& BIntT0T2T::operator=(union BIntT0T2T(& other)) {
+ rl_m_assign__BIntT0T2T_BIntT0T2T(this, &other);
+return *this;
+}
+inline BIntT0T2T::BIntT0T2T() {
+ rl_m_init__BIntT0T2T(this);
+}
+inline void BIntT0T2T::operator=(int64_t(& other)) {
+ rl_m_assign__BIntT0T2T_int64_t(this, &other);
+}
+inline union BIntT0T2T BIntT0T2T::add(int64_t(& val)) {
+ union ToReturn { union BIntT0T2T payload; ToReturn() {}; ~ToReturn() { payload.~BIntT0T2T(); } }	_rl__result;
+ rl_m_add__BIntT0T2T_int64_t_r_BIntT0T2T(&_rl__result.payload, this, &val);
+ return _rl__result.payload;
+}
+inline union BIntT0T2T BIntT0T2T::add(union BIntT0T2T(& other)) {
+ union ToReturn { union BIntT0T2T payload; ToReturn() {}; ~ToReturn() { payload.~BIntT0T2T(); } }	_rl__result;
+ rl_m_add__BIntT0T2T_BIntT0T2T_r_BIntT0T2T(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline int8_t VectorTint8_tT::pop() {
+ union ToReturn { int8_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_pop__VectorTint8_tT_r_int8_t(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline int8_t* VectorTint8_tT::get(int64_t(& index)) {
+ union ToReturn { int8_t* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_get__VectorTint8_tT_int64_t_r_int8_tRef(&_rl__result.payload, this, &index);
+ return _rl__result.payload;
+}
+inline VectorTint8_tT& VectorTint8_tT::operator=(union VectorTint8_tT(& other)) {
+ rl_m_assign__VectorTint8_tT_VectorTint8_tT(this, &other);
+return *this;
+}
+inline void VectorTint8_tT::drop_back(int64_t(& quantity)) {
+ rl_m_drop_back__VectorTint8_tT_int64_t(this, &quantity);
+}
+inline VectorTint8_tT::VectorTint8_tT() {
+ rl_m_init__VectorTint8_tT(this);
+}
+inline VectorTint8_tT::~VectorTint8_tT() {
+ rl_m_drop__VectorTint8_tT(this);
+}
+inline int64_t VectorTint8_tT::size() {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_size__VectorTint8_tT_r_int64_t(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline int8_t* VectorTint8_tT::back() {
+ union ToReturn { int8_t* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_back__VectorTint8_tT_r_int8_tRef(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline void VectorTint8_tT::append(int8_t(& value)) {
+ rl_m_append__VectorTint8_tT_int8_t(this, &value);
+}
+inline GamePassTurn::GamePassTurn() {
+ rl_m_init__GamePassTurn(this);
+}
+inline GamePassTurn& GamePassTurn::operator=(union GamePassTurn(& other)) {
+ rl_m_assign__GamePassTurn_GamePassTurn(this, &other);
+return *this;
+}
+inline GamePlaceStone::GamePlaceStone() {
+ rl_m_init__GamePlaceStone(this);
+}
+inline GamePlaceStone& GamePlaceStone::operator=(union GamePlaceStone(& other)) {
+ rl_m_assign__GamePlaceStone_GamePlaceStone(this, &other);
+return *this;
+}
+inline int8_t CrossState::to_char() {
+ union ToReturn { int8_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_to_char__CrossState_r_int8_t(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline CrossState::CrossState() {
+ rl_m_init__CrossState(this);
+}
+inline CrossState& CrossState::operator=(union CrossState(& other)) {
+ rl_m_assign__CrossState_CrossState(this, &other);
+return *this;
+}
+inline bool CrossState::is_equal(union CrossState(& other)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_is_equal__CrossState_CrossState_r_bool(&_rl__result.payload, this, &other);
+ return _rl__result.payload;
+}
+inline union CrossState CrossState::opposite_color() {
+ union ToReturn { union CrossState payload; ToReturn() {}; ~ToReturn() { payload.~CrossState(); } }	_rl__result;
+ rl_m_opposite_color__CrossState_r_CrossState(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline Coords::Coords(int64_t(& x), int64_t(& y)) {
+ union ToReturn { union Coords payload; ToReturn() {}; ~ToReturn() { payload.~Coords(); } }	_rl__result;
+ rl_m_init__Coords_int64_t_int64_t_r_Coords(&_rl__result.payload, this, &x, &y);
+ return _rl__result.payload;
+}
+inline Coords::Coords() {
+ rl_m_init__Coords(this);
+}
+inline Coords& Coords::operator=(union Coords(& other)) {
+ rl_m_assign__Coords_Coords(this, &other);
+return *this;
+}
+inline Scores& Scores::operator=(union Scores(& other)) {
+ rl_m_assign__Scores_Scores(this, &other);
+return *this;
+}
+inline Scores::Scores() {
+ rl_m_init__Scores(this);
+}
+inline VectorTStringT::~VectorTStringT() {
+ rl_m_drop__VectorTStringT(this);
+}
+inline union String VectorTStringT::pop() {
+ union ToReturn { union String payload; ToReturn() {}; ~ToReturn() { payload.~String(); } }	_rl__result;
+ rl_m_pop__VectorTStringT_r_String(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline VectorTStringT::VectorTStringT() {
+ rl_m_init__VectorTStringT(this);
+}
+inline void VectorTStringT::append(union String(& value)) {
+ rl_m_append__VectorTStringT_String(this, &value);
+}
+inline int64_t VectorTStringT::size() {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_size__VectorTStringT_r_int64_t(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline VectorTStringT& VectorTStringT::operator=(union VectorTStringT(& other)) {
+ rl_m_assign__VectorTStringT_VectorTStringT(this, &other);
+return *this;
+}
+inline union String* VectorTStringT::get(int64_t(& index)) {
+ union ToReturn { union String* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_get__VectorTStringT_int64_t_r_StringRef(&_rl__result.payload, this, &index);
+ return _rl__result.payload;
+}
+inline double* VectorTdoubleT::get(int64_t(& index)) {
+ union ToReturn { double* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_get__VectorTdoubleT_int64_t_r_doubleRef(&_rl__result.payload, this, &index);
+ return _rl__result.payload;
+}
+inline VectorTdoubleT::~VectorTdoubleT() {
+ rl_m_drop__VectorTdoubleT(this);
+}
+inline void VectorTdoubleT::resize(int64_t(& new_size)) {
+ rl_m_resize__VectorTdoubleT_int64_t(this, &new_size);
+}
+inline double VectorTdoubleT::pop() {
+ union ToReturn { double payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_pop__VectorTdoubleT_r_double(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline int64_t VectorTdoubleT::size() {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_size__VectorTdoubleT_r_int64_t(&_rl__result.payload, this);
+ return _rl__result.payload;
+}
+inline VectorTdoubleT::VectorTdoubleT() {
+ rl_m_init__VectorTdoubleT(this);
+}
+inline void VectorTdoubleT::append(double(& value)) {
+ rl_m_append__VectorTdoubleT_double(this, &value);
+}
+inline VectorTdoubleT& VectorTdoubleT::operator=(union VectorTdoubleT(& other)) {
+ rl_m_assign__VectorTdoubleT_VectorTdoubleT(this, &other);
+return *this;
+}
+inline void VectorTboolT::append(bool(& value)) {
+ rl_m_append__VectorTboolT_bool(this, &value);
+}
+inline VectorTboolT& VectorTboolT::operator=(union VectorTboolT(& other)) {
+ rl_m_assign__VectorTboolT_VectorTboolT(this, &other);
+return *this;
+}
+inline VectorTboolT::~VectorTboolT() {
+ rl_m_drop__VectorTboolT(this);
+}
+inline VectorTboolT::VectorTboolT() {
+ rl_m_init__VectorTboolT(this);
+}
+inline bool* VectorTboolT::get(int64_t(& index)) {
+ union ToReturn { bool* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_m_get__VectorTboolT_int64_t_r_boolRef(&_rl__result.payload, this, &index);
+ return _rl__result.payload;
+}
+inline void AnyGameAction::operator=(union GamePassTurn(& other)) {
+ rl_m_assign__AnyGameAction_GamePassTurn(this, &other);
+}
+inline void AnyGameAction::operator=(union GamePlaceStone(& other)) {
+ rl_m_assign__AnyGameAction_GamePlaceStone(this, &other);
+}
+inline AnyGameAction& AnyGameAction::operator=(struct AnyGameAction(& other)) {
+ rl_m_assign__AnyGameAction_AnyGameAction(this, &other);
+return *this;
+}
+inline AnyGameAction::AnyGameAction() {
+ rl_m_init__AnyGameAction(this);
+}
+#endif
+typedef struct AnyGameAction AnyGameAction;
+#ifdef __cplusplus
+inline void init(char*(& self)) {
+ rl_m_init__strlit(&self);
+}
+inline void assign(char*(& self), char*(& other)) {
+ rl_m_assign__strlit_strlit(&self, &other);
+}
+inline void print(union String(& to_print)) {
+ rl_print__String(&to_print);
+}
+inline void print(int8_t(& to_print)) {
+ rl_print__int8_t(&to_print);
+}
+inline int64_t max(int64_t(& a), int64_t(& b)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_max__int64_t_int64_t_r_int64_t(&_rl__result.payload , &a, &b);
+ return _rl__result.payload;
+}
+inline int64_t min(int64_t(& a), int64_t(& b)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_min__int64_t_int64_t_r_int64_t(&_rl__result.payload , &a, &b);
+ return _rl__result.payload;
+}
+inline int64_t abs(int64_t(& a)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_abs__int64_t_r_int64_t(&_rl__result.payload , &a);
+ return _rl__result.payload;
+}
+inline bool near(double(& value), double(& target), double(& distance)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_near__double_double_double_r_bool(&_rl__result.payload , &value, &target, &distance);
+ return _rl__result.payload;
+}
+inline bool custom_equal(int64_t(& lhs), int64_t(& rhs)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_custom_equal__int64_t_int64_t_r_bool(&_rl__result.payload , &lhs, &rhs);
+ return _rl__result.payload;
+}
+inline bool custom_equal(bool(& lhs), bool(& rhs)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_custom_equal__bool_bool_r_bool(&_rl__result.payload , &lhs, &rhs);
+ return _rl__result.payload;
+}
+inline bool custom_equal(int8_t(& lhs), int8_t(& rhs)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_custom_equal__int8_t_int8_t_r_bool(&_rl__result.payload , &lhs, &rhs);
+ return _rl__result.payload;
+}
+inline bool custom_equal(double(& lhs), double(& rhs)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_custom_equal__double_double_r_bool(&_rl__result.payload , &lhs, &rhs);
+ return _rl__result.payload;
+}
+inline void parse_and_execute(union Game(& state), struct AnyGameAction(& variant), union VectorTint8_tT(& input), int64_t(& read_bytes)) {
+ rl_parse_and_execute__Game_AnyGameAction_VectorTint8_tT_int64_t(&state, &variant, &input, &read_bytes);
+}
+inline void parse_and_execute(union Game(& state), struct AnyGameAction(& variant), union VectorTint8_tT(& input)) {
+ rl_parse_and_execute__Game_AnyGameAction_VectorTint8_tT(&state, &variant, &input);
+}
+inline void enumerate(bool(& b), union VectorTboolT(& output)) {
+ rl_enumerate__bool_VectorTboolT(&b, &output);
+}
+inline void enumeration_error(int64_t(& x), union String(& out), union VectorTStringT(& context)) {
+ rl_enumeration_error__int64_t_String_VectorTStringT(&x, &out, &context);
+}
+inline void enumeration_error(double(& x), union String(& out), union VectorTStringT(& context)) {
+ rl_enumeration_error__double_String_VectorTStringT(&x, &out, &context);
+}
+inline void write_in_observation_tensor(int64_t(& value), int64_t(& min), int64_t(& max), union VectorTdoubleT(& output), int64_t(& index)) {
+ rl_write_in_observation_tensor__int64_t_int64_t_int64_t_VectorTdoubleT_int64_t(&value, &min, &max, &output, &index);
+}
+inline void write_in_observation_tensor(int64_t(& obj), int64_t(& observer_id), union VectorTdoubleT(& output), int64_t(& index)) {
+ rl_write_in_observation_tensor__int64_t_int64_t_VectorTdoubleT_int64_t(&obj, &observer_id, &output, &index);
+}
+inline int64_t size_as_observation_tensor(int64_t(& obj)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_size_as_observation_tensor__int64_t_r_int64_t(&_rl__result.payload , &obj);
+ return _rl__result.payload;
+}
+inline void write_in_observation_tensor(double(& obj), int64_t(& observer_id), union VectorTdoubleT(& output), int64_t(& index)) {
+ rl_write_in_observation_tensor__double_int64_t_VectorTdoubleT_int64_t(&obj, &observer_id, &output, &index);
+}
+inline bool can_write_in_observation_tensor(double(& obj), int64_t(& observer_id), union VectorTdoubleT(& output), int64_t(& index)) {
+bool toReturn;
+ rl_can_write_in_observation_tensor__double_int64_t_VectorTdoubleT_int64_t_r_bool(&toReturn , &obj, &observer_id, &output, &index);
+ return toReturn;
+}
+inline int64_t size_as_observation_tensor(double(& obj)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_size_as_observation_tensor__double_r_int64_t(&_rl__result.payload , &obj);
+ return _rl__result.payload;
+}
+inline bool can_size_as_observation_tensor(double(& obj)) {
+bool toReturn;
+ rl_can_size_as_observation_tensor__double_r_bool(&toReturn , &obj);
+ return toReturn;
+}
+inline void write_in_observation_tensor(bool(& obj), int64_t(& observer_id), union VectorTdoubleT(& output), int64_t(& index)) {
+ rl_write_in_observation_tensor__bool_int64_t_VectorTdoubleT_int64_t(&obj, &observer_id, &output, &index);
+}
+inline int64_t size_as_observation_tensor(bool(& obj)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_size_as_observation_tensor__bool_r_int64_t(&_rl__result.payload , &obj);
+ return _rl__result.payload;
+}
+inline void write_in_observation_tensor(int8_t(& obj), int64_t(& observer_id), union VectorTdoubleT(& output), int64_t(& index)) {
+ rl_write_in_observation_tensor__int8_t_int64_t_VectorTdoubleT_int64_t(&obj, &observer_id, &output, &index);
+}
+inline int64_t size_as_observation_tensor(int8_t(& obj)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_size_as_observation_tensor__int8_t_r_int64_t(&_rl__result.payload , &obj);
+ return _rl__result.payload;
+}
+inline void write_tensor_warning_context(union String(& out), union VectorTStringT(& context)) {
+ rl_write_tensor_warning_context__String_VectorTStringT(&out, &context);
+}
+inline void tensorable_warning(int64_t(& x), union String(& out), union VectorTStringT(& context)) {
+ rl_tensorable_warning__int64_t_String_VectorTStringT(&x, &out, &context);
+}
+inline void tensorable_warning(double(& x), union String(& out), union VectorTStringT(& context)) {
+ rl_tensorable_warning__double_String_VectorTStringT(&x, &out, &context);
+}
+inline void append_to_vector(int64_t(& to_add), union VectorTint8_tT(& output)) {
+ rl_append_to_vector__int64_t_VectorTint8_tT(&to_add, &output);
+}
+inline void append_to_vector(double(& to_add), union VectorTint8_tT(& output)) {
+ rl_append_to_vector__double_VectorTint8_tT(&to_add, &output);
+}
+inline void append_to_vector(bool(& to_add), union VectorTint8_tT(& output)) {
+ rl_append_to_vector__bool_VectorTint8_tT(&to_add, &output);
+}
+inline void append_to_vector(int8_t(& to_add), union VectorTint8_tT(& output)) {
+ rl_append_to_vector__int8_t_VectorTint8_tT(&to_add, &output);
+}
+inline bool parse_from_vector(int64_t(& result), union VectorTint8_tT(& input), int64_t(& index)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_parse_from_vector__int64_t_VectorTint8_tT_int64_t_r_bool(&_rl__result.payload , &result, &input, &index);
+ return _rl__result.payload;
+}
+inline bool parse_from_vector(double(& result), union VectorTint8_tT(& input), int64_t(& index)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_parse_from_vector__double_VectorTint8_tT_int64_t_r_bool(&_rl__result.payload , &result, &input, &index);
+ return _rl__result.payload;
+}
+inline bool parse_from_vector(bool(& result), union VectorTint8_tT(& input), int64_t(& index)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_parse_from_vector__bool_VectorTint8_tT_int64_t_r_bool(&_rl__result.payload , &result, &input, &index);
+ return _rl__result.payload;
+}
+inline bool parse_from_vector(int8_t(& result), union VectorTint8_tT(& input), int64_t(& index)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_parse_from_vector__int8_t_VectorTint8_tT_int64_t_r_bool(&_rl__result.payload , &result, &input, &index);
+ return _rl__result.payload;
+}
+inline bool from_byte_vector(int8_t(& result), union VectorTint8_tT(& input), int64_t(& read_bytes)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_from_byte_vector__int8_t_VectorTint8_tT_int64_t_r_bool(&_rl__result.payload , &result, &input, &read_bytes);
+ return _rl__result.payload;
+}
+inline bool from_byte_vector(struct AnyGameAction(& result), union VectorTint8_tT(& input), int64_t(& read_bytes)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_from_byte_vector__AnyGameAction_VectorTint8_tT_int64_t_r_bool(&_rl__result.payload , &result, &input, &read_bytes);
+ return _rl__result.payload;
+}
+inline union String s(char*(& literal)) {
+ union ToReturn { union String payload; ToReturn() {}; ~ToReturn() { payload.~String(); } }	_rl__result;
+ rl_s__strlit_r_String(&_rl__result.payload , &literal);
+ return _rl__result.payload;
+}
+inline void append_to_string(char*(& x), union String(& output)) {
+ rl_append_to_string__strlit_String(&x, &output);
+}
+inline void append_to_string(union String(& x), union String(& output)) {
+ rl_append_to_string__String_String(&x, &output);
+}
+inline void append_to_string(bool(& x), union String(& output)) {
+ rl_append_to_string__bool_String(&x, &output);
+}
+inline union String to_string(int8_t(& to_stringyfi)) {
+ union ToReturn { union String payload; ToReturn() {}; ~ToReturn() { payload.~String(); } }	_rl__result;
+ rl_to_string__int8_t_r_String(&_rl__result.payload , &to_stringyfi);
+ return _rl__result.payload;
+}
+inline bool is_space(int8_t(& b)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_is_space__int8_t_r_bool(&_rl__result.payload , &b);
+ return _rl__result.payload;
+}
+inline bool is_open_paren(int8_t(& b)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_is_open_paren__int8_t_r_bool(&_rl__result.payload , &b);
+ return _rl__result.payload;
+}
+inline bool is_close_paren(int8_t(& b)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_is_close_paren__int8_t_r_bool(&_rl__result.payload , &b);
+ return _rl__result.payload;
+}
+inline int64_t length(char*(& literal)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_length__strlit_r_int64_t(&_rl__result.payload , &literal);
+ return _rl__result.payload;
+}
+inline bool parse_string(union String(& result), union String(& buffer), int64_t(& index)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_parse_string__String_String_int64_t_r_bool(&_rl__result.payload , &result, &buffer, &index);
+ return _rl__result.payload;
+}
+inline bool parse_string(bool(& result), union String(& buffer), int64_t(& index)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_parse_string__bool_String_int64_t_r_bool(&_rl__result.payload , &result, &buffer, &index);
+ return _rl__result.payload;
+}
+inline bool is_enum(union CrossState(& self)) {
+ union ToReturn { bool payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_is_enum__CrossState_r_bool(&_rl__result.payload , &self);
+ return _rl__result.payload;
+}
+inline int64_t max(union CrossState(& self)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_max__CrossState_r_int64_t(&_rl__result.payload , &self);
+ return _rl__result.payload;
+}
+inline int64_t as_int(union CrossState(& self)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_as_int__CrossState_r_int64_t(&_rl__result.payload , &self);
+ return _rl__result.payload;
+}
+inline void from_int(union CrossState(& self), int64_t(& new_value)) {
+ rl_from_int__CrossState_int64_t(&self, &new_value);
+}
+inline char* as_string_literal(union CrossState(& self)) {
+ union ToReturn { char* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_as_string_literal__CrossState_r_strlit(&_rl__result.payload , &self);
+ return _rl__result.payload;
+}
+inline void apply(union GamePassTurn(& self), union Game(& frame)) {
+ rl_apply__GamePassTurn_Game(&self, &frame);
+}
+inline bool can_apply(union GamePassTurn(& self), union Game(& frame)) {
+bool toReturn;
+ rl_can_apply__GamePassTurn_Game_r_bool(&toReturn , &self, &frame);
+ return toReturn;
+}
+inline char* get_type_name(union GamePassTurn(& self)) {
+ union ToReturn { char* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_get_type_name__GamePassTurn_r_strlit(&_rl__result.payload , &self);
+ return _rl__result.payload;
+}
+inline void apply(union GamePlaceStone(& self), union Game(& frame)) {
+ rl_apply__GamePlaceStone_Game(&self, &frame);
+}
+inline bool can_apply(union GamePlaceStone(& self), union Game(& frame)) {
+bool toReturn;
+ rl_can_apply__GamePlaceStone_Game_r_bool(&toReturn , &self, &frame);
+ return toReturn;
+}
+inline char* get_type_name(union GamePlaceStone(& self)) {
+ union ToReturn { char* payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_get_type_name__GamePlaceStone_r_strlit(&_rl__result.payload , &self);
+ return _rl__result.payload;
+}
+inline void apply(struct AnyGameAction(& self), union Game(& frame)) {
+ rl_apply__AnyGameAction_Game(&self, &frame);
+}
+inline bool can_apply(struct AnyGameAction(& self), union Game(& frame)) {
+bool toReturn;
+ rl_can_apply__AnyGameAction_Game_r_bool(&toReturn , &self, &frame);
+ return toReturn;
+}
+inline void pretty_print(union Game(& game)) {
+ rl_pretty_print__Game(&game);
+}
+inline int64_t get_current_player(union Game(& g)) {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_get_current_player__Game_r_int64_t(&_rl__result.payload , &g);
+ return _rl__result.payload;
+}
+inline double score(union Game(& g), int64_t(& player_id)) {
+ union ToReturn { double payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_score__Game_int64_t_r_double(&_rl__result.payload , &g, &player_id);
+ return _rl__result.payload;
+}
+inline int64_t get_num_players() {
+ union ToReturn { int64_t payload; ToReturn() {}; ~ToReturn() { } }	_rl__result;
+ rl_get_num_players__r_int64_t(&_rl__result.payload );
+ return _rl__result.payload;
+}
+inline void fuzz(union VectorTint8_tT(& input)) {
+ rl_fuzz__VectorTint8_tT(&input);
+}
+inline union Game play() {
+ union ToReturn { union Game payload; ToReturn() {}; ~ToReturn() { payload.~Game(); } }	_rl__result;
+ rl_play__r_Game(&_rl__result.payload );
+ return _rl__result.payload;
+}
+#endif
+#undef RLC_GET_TYPE_DEFS
+#endif
+

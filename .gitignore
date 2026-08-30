@@ -9,8 +9,6 @@ wheels/
 # Virtual environments
 .venv
 
-# binary files and libraries
+# binary files 
 go.out
-libgo.so
 backgammon.out
-libbackgammon.so
